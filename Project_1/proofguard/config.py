@@ -2,7 +2,7 @@
 
 Roles (each is any OpenAI-compatible /chat/completions endpoint; every role falls back to LLM_*):
   extractor  LLM_BASE_URL / LLM_API_KEY / LLM_MODEL               layers 1-2
-  verifier   VERIFIER_BASE_URL / VERIFIER_API_KEY / VERIFIER_MODEL   layer 4 (H2O-Lightning-4B, one-token judge)
+    verifier   VERIFIER_BASE_URL / VERIFIER_API_KEY / VERIFIER_MODEL   layer 4 (Microsoft Foundry Decision-1 or OpenAI-compatible chat)
   challenger CHALLENGER_*                                            layer 4 (adversarial pass, run selectively)
   escalator  ESCALATE_*                                              layer 6 (stronger second reader for the gray zone)
 """
@@ -55,16 +55,18 @@ class Role:
     price_in: float = 0.0     # USD per 1M input tokens (0 = free tier / self-hosted)
     price_out: float = 0.0
     extra_body: dict = field(default_factory=dict)  # provider-specific params, e.g. {"chat_template_kwargs": {"enable_thinking": false}}
-    api: str = "chat"                               # "chat" = OpenAI /chat/completions | "systemone" = H2O-Lightning decision API
+    api: str = "chat"                               # "chat" = OpenAI /chat/completions | "systemone" = legacy H2O | "foundry" = Microsoft Decision API
 
     @property
     def ready(self) -> bool:
-        # the H2O decision API has a single fixed model, so a model name is not required there
+        # Legacy H2O SystemOne has a fixed model; Microsoft Foundry requires a deployment name.
         return bool(self.base_url and (self.model or self.api == "systemone"))
 
     @property
     def signature(self) -> str:
-        return f"{self.name}={self.model or 'h2o-lightning-4b'}{'@systemone' if self.api == 'systemone' else ''}" if self.ready else f"{self.name}=none"
+        default_model = "h2o-lightning-4b" if self.api == "systemone" else "microsoft-decision-1"
+        suffix = "@systemone" if self.api == "systemone" else ("@foundry" if self.api == "foundry" else "")
+        return f"{self.name}={self.model or default_model}{suffix}" if self.ready else f"{self.name}=none"
 
 
 def _role(name: str, prefix: str, fallback: "Role | None") -> Role:
@@ -114,7 +116,7 @@ class Config:
         sources = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
                    for p in (HERE / "proofguard").glob("*") if p.suffix in (".py", ".json")}
         knobs = {k: os.environ.get(k, "") for k in
-                 ("PG_VISION", "PG_JSON_MODE", "PG_MAX_CONTEXT_CHARS", "PG_MAX_PAGES",
+                 ("PG_PIPELINE", "PG_RECOVERY_MAX_FIELDS", "PG_VISION", "PG_JSON_MODE", "PG_MAX_CONTEXT_CHARS", "PG_MAX_PAGES",
                   "PG_FIELDS_PER_CALL", "PG_VERIFY_MAX_PER_DOC", "PG_GRAY_LO", "PG_GRAY_HI_SLACK")}
         digest = hashlib.sha256(json.dumps([roles, sources, knobs], sort_keys=True).encode()).hexdigest()[:20]
         return "|".join(r.signature for r in (self.extractor, self.verifier, self.challenger, self.escalator)) + "|build=" + digest

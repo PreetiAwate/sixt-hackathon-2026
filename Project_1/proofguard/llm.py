@@ -219,18 +219,24 @@ def p_yes(top: list, text: str) -> tuple[float | None, str]:
 
 
 class DecisionClient:
-    """Native client for H2O-Lightning-4B's decision API: POST {base}/v1/systemone with a `state` record and typed yes/no `questions`.
-    One forward pass and one output token per question; answers are calibrated probabilities (answers[q]["noul"] = P(yes))."""
+    """Client for Microsoft Foundry Decision-1 or legacy H2O SystemOne typed decisions."""
 
     def __init__(self, role: Role, cache_dir: Path, timeout: float = 120.0):
         self.role, self.timeout, self.cache_dir = role, timeout, cache_dir
 
     def _url(self) -> str:
         b = self.role.base_url.rstrip("/")
+        if self.role.api == "foundry":
+            suffix = "/providers/microsoft/v1/systemone"
+            return b if b.endswith(suffix) else b + suffix
         return b if b.endswith("/systemone") else (b[:-3] if b.endswith("/v1") else b) + "/v1/systemone"
 
     def ask(self, state: dict, questions: dict, images: list | None = None) -> dict:
         payload = {"state": state, "questions": questions}
+        if self.role.api == "foundry" or (
+            self.role.api == "systemone" and self.role.model and "h2o" not in self.role.model.lower()
+        ):
+            payload["model"] = self.role.model
         if images:
             payload["images"] = images
         h = hashlib.sha256((self._url() + json.dumps(payload, sort_keys=True)).encode()).hexdigest()
@@ -242,9 +248,12 @@ class DecisionClient:
                 return d["p"]
             except (ValueError, KeyError):
                 pass
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "Accept": "application/json"}
         if self.role.api_key:
-            headers["Authorization"] = f"Bearer {self.role.api_key}"
+            if self.role.api == "foundry":
+                headers["api-key"] = self.role.api_key
+            else:
+                headers["Authorization"] = f"Bearer {self.role.api_key}"
         delay, last = 2.0, None
         for _ in range(7):
             t0 = time.time()
@@ -252,7 +261,16 @@ class DecisionClient:
                 req = urllib.request.Request(self._url(), json.dumps(payload).encode(), headers)
                 with urllib.request.urlopen(req, timeout=self.timeout) as r:
                     d = json.load(r)
-                probs = {k: float(v.get("noul")) for k, v in d["answers"].items() if isinstance(v, dict) and v.get("noul") is not None}
+                probs = {}
+                for key, answer in d["answers"].items():
+                    if not isinstance(answer, dict):
+                        continue
+                    value = answer.get("probability", answer.get("noul"))
+                    if value is None:
+                        continue
+                    probability = float(value)
+                    if math.isfinite(probability) and 0.0 <= probability <= 1.0:
+                        probs[key] = probability
                 u = d.get("usage") or {}
                 rep = Reply("", [], int(u.get("input_tokens", 0) or 0), int(u.get("output_tokens", 0) or 0), time.time() - t0)
                 USAGE.add(self.role, rep)

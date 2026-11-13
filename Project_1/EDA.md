@@ -59,8 +59,6 @@ Always-present: Document Name. Almost-never-present (>=90% absent): Joint Ip Own
 - **An empty checkbox is not null**: it is the string `false` (978 such fields vs 373 `true`). A system that returns null for an unticked box wastes a free, easy saving; one that reads a scan badly and says `false` for a ticked box books a wrong value.
 - Nested objects/arrays (366 fields) are scored all-or-nothing, so one wrong cell makes the whole value wrong. These are the fields we would never automate.
 
-- **85 of 206 ExtractBench PDFs (41.3%) have no usable text layer** (scans/photos). The text-only starter path cannot read them at all; they need OCR or a vision model, and there is no text to verify an answer against. Median text length of the rest: 7,689 chars.
-
 Capture-condition / challenge tags (docs):
 
 `challenge:T3.a`: 146, `domain:D1`: 87, `perception:P2`: 84, `domain:D2`: 70, `perception:P3`: 34, `challenge:T1.a`: 25, `domain:D3`: 18, `domain:D5`: 15, `challenge:T3.b`: 15, `challenge:T3.e`: 14, `challenge:T1.b`: 12, `challenge:T1.d`: 12
@@ -70,4 +68,4 @@ Capture-condition / challenge tags (docs):
 ## 5. Reference points
 
 - 'Never answer' saves 0%. 'Most common value' (3_baseline.py) is the bar a real system must clear.
-- Break-even precision at 1:100 costs is 100/101 = **99.01%**: a booked field only pays off if the chance it is right exceeds that. This number, not accuracy, drives the whole design of ProofGuard.
+- Break-even precision at review cost 1 and wrong-value cost 100 is **99.0%**: accepting costs 100 × (1 − p), while review costs 1, so acceptance breaks even at p = 0.99 and pays off only above it. This number, not accuracy, drives the whole design of ProofGuard.

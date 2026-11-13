@@ -215,7 +215,7 @@ def cmd_doctor(a):
             print(f"{role.name:10s} same endpoint+model as {seen[key]}"); continue
         seen[key] = role.name
         res = []
-        if role.api == "systemone":
+        if role.api in ("systemone", "foundry"):
             from proofguard.llm import DecisionClient
             from proofguard.verify import QUESTIONS
             try:
@@ -225,8 +225,14 @@ def cmd_doctor(a):
                      "document_excerpt": "12. Governing Law. This Agreement is governed by the laws of the State of Illinois."}, QUESTIONS)
                 res.append(f"decision API ok {time.time() - t:.1f}s  P(supported)={pr.get('supported')} P(complete)={pr.get('complete')} P(right_kind)={pr.get('right_kind')}  (expect ~1.0 for a true claim)")
             except LLMError as e:
-                res.append("FAILED: " + str(e)[:1600] + "  (is serve.sh warm? GET /health must return 200)")
-            print(f"{role.name:10s} H2O decision API @ {role.base_url}\n           " + "\n           ".join(res))
+                res.append("FAILED: " + str(e)[:1600])
+            if role.api == "foundry":
+                provider = "Microsoft Foundry Decision API"
+            elif role.api == "systemone" and "microsoft" in role.model.lower():
+                provider = "Microsoft Decision-1 SystemOne gateway"
+            else:
+                provider = "legacy H2O SystemOne API"
+            print(f"{role.name:10s} {provider} @ {role.base_url}\n           " + "\n           ".join(res))
             continue
         cl = Client(role, Path("/tmp/pg_doctor_cache"), 60)
         try:
@@ -279,7 +285,7 @@ def cmd_ablate(a):
     proof = [n for n in S1 if n not in verif and n not in pri and n != "ext_conf"]
     sets = [("A  extractor's own confidence + field track record", ["ext_conf"] + pri),
             ("B  + Proof Engine (evidence, schema, semantics, cross-field)", ["ext_conf"] + pri + proof),
-            ("C  + H2O-Lightning verifier (one token)", ["ext_conf"] + pri + proof + verif),
+            ("C  + configured decision verifier", ["ext_conf"] + pri + proof + verif),
             ("D  + adversarial challenger + second reader (full ProofGuard)", S2)]
     out = []
     n_pub = len(pub)

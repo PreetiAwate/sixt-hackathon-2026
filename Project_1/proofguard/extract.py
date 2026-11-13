@@ -253,8 +253,14 @@ class Extractor:
             if ans is None or not isinstance(ans, dict) or not ans:
                 out[s.name] = Cand(s.name, error=True, source="llm")
                 continue
-            a = ans.get(s.name)
+            if s.name not in ans:
+                out[s.name] = Cand(s.name, error=True, source="llm")
+                continue
+            a = ans[s.name]
             if isinstance(a, dict):
+                if "value" not in a:
+                    out[s.name] = Cand(s.name, error=True, source="llm")
+                    continue
                 v, conf, ev, pg = a.get("value"), a.get("confidence", 0.5), a.get("evidence"), a.get("page")
             else:
                 v, conf, ev, pg = a, 0.5, None, None

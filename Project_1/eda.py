@@ -135,7 +135,7 @@ def main():
     # baseline
     out += ["## 5. Reference points", "",
             "- 'Never answer' saves 0%. 'Most common value' (3_baseline.py) is the bar a real system must clear.",
-            "- Break-even precision at 1:100 costs is 100/101 = **99.01%**: a booked field only pays off if the chance it is right exceeds that. "
+            "- Break-even precision at review cost 1 and wrong-value cost 100 is **99.0%**: accepting costs 100 × (1 − p), while review costs 1, so acceptance breaks even at p = 0.99 and pays off only above it. "
             "This number, not accuracy, drives the whole design of ProofGuard.", ""]
     Path(a.out).write_text("\n".join(out), encoding="utf-8")
     print(f"wrote {a.out}")

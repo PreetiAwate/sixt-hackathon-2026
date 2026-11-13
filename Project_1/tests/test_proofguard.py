@@ -29,6 +29,22 @@ class TestParsing(unittest.TestCase):
         self.assertEqual(parse_json('{"a": 1, "b": {"x": 2}, "c": "unfinished'), {"a": 1, "b": {"x": 2}})
         self.assertEqual(parse_json("no json here"), {})
 
+    def test_missing_field_from_partial_model_object_is_an_error(self):
+        from proofguard.config import Config
+        from proofguard.extract import Extractor
+        from proofguard.schema import FieldSpec
+
+        class FakeClient:
+            def chat(self, *args, **kwargs):
+                return type("Reply", (), {"text": '{"first": {"value": "present"}}'})()
+
+        cfg = Config(None, None, None, None, 1000, 1, 10, 4, Path("."), 1, 1, 0.45, 0.5)
+        extractor = Extractor.__new__(Extractor)
+        specs = [FieldSpec("first", "text"), FieldSpec("second", "text")]
+        result = extractor._ask(specs, "system", [{"text": "prompt"}], FakeClient(), 100)
+        self.assertFalse(result["first"].error)
+        self.assertTrue(result["second"].error)
+
     def test_p_yes(self):
         p, how = p_yes([("1", -0.05), ("0", -3.0)], "1")
         self.assertEqual(how, "logprob")
@@ -196,6 +212,48 @@ class TestEndToEnd(unittest.TestCase):
         self.assertTrue(verified)
         self.assertTrue(all(f["verifier"] == "systemone" for f in verified))
         self.assertTrue(all(f["f1"]["v_complete_avail"] == 1.0 for f in verified))
+
+    def test_microsoft_decision_systemone_gateway(self):
+        from proofguard.config import Role
+        from proofguard.llm import DecisionClient
+        from proofguard.verify import QUESTIONS
+
+        role = Role("verifier", "http://127.0.0.1:8791", "test-key", "microsoft-decision-1", api="systemone")
+        client = DecisionClient(role, self.tmp / "decision-cache", 10)
+        probabilities = client.ask(
+            {"field": "Governing Law", "proposed_value": "Illinois", "document_excerpt": "Governing law: Illinois."},
+            QUESTIONS,
+        )
+
+        self.assertIn("supported", probabilities)
+        request = next(r for r in reversed(self.oracle.decision_requests)
+                       if r["body"].get("model") == "microsoft-decision-1")
+        self.assertEqual(request["path"], "/v1/systemone")
+        self.assertIsNone(request["api_key"])
+        self.assertEqual(request["authorization"], "Bearer test-key")
+
+    def test_microsoft_foundry_decision_api_contract(self):
+        names = ("VERIFIER_API", "VERIFIER_BASE_URL", "VERIFIER_API_KEY", "VERIFIER_MODEL")
+        previous = {name: os.environ.get(name) for name in names}
+        os.environ.update(VERIFIER_API="foundry", VERIFIER_BASE_URL="http://127.0.0.1:8791",
+                          VERIFIER_API_KEY="foundry-test-key", VERIFIER_MODEL="decision-test-deployment")
+        try:
+            (_, trace), = self.run_pg()[:1]
+            verified = [f for f in trace["fields"].values() if f.get("verifier")]
+            self.assertTrue(verified)
+            self.assertTrue(all(f["verifier"] == "foundry" for f in verified))
+            request = next(r for r in reversed(self.oracle.decision_requests)
+                           if r["path"] == "/providers/microsoft/v1/systemone")
+            self.assertEqual(request["body"]["model"], "decision-test-deployment")
+            self.assertEqual(request["api_key"], "foundry-test-key")
+            self.assertIsNone(request["authorization"])
+            self.assertIn("supported", request["body"]["questions"])
+        finally:
+            for name, value in previous.items():
+                if value is None:
+                    os.environ.pop(name, None)
+                else:
+                    os.environ[name] = value
 
     def test_calibrating_mode_records_stage2_signals(self):
         (row, trace), = self.run_pg(full=True)[:1]

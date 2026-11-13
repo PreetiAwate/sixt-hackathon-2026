@@ -1,5 +1,5 @@
 """Layer 5, the Cost-Aware Risk Controller.
-Turns every signal about a field (proof checks, H2O verifier probability, challenger verdict, second-reader agreement, per-field track record)
+Turns every signal about a field (proof checks, verifier probability, challenger verdict, second-reader agreement, per-field track record)
 into ONE calibrated probability that the value is correct, then decides under the real cost structure:
     Accept has expected cost 100*(1-p); review costs 1. Break-even is p=0.99.
 The margin is not a fudge factor: the threshold is the one that maximises the 20th-percentile of net saving over bootstrap resamples of

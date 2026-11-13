@@ -60,7 +60,7 @@ def slides(res, cal, out, label):
         fig, ax = base("Six layers: prove, challenge, then decide", label)
         rows = [("Layers 1-2  LLM extraction", "value + verbatim evidence quote + location  |  retrieval-first for long contracts, page images for scans", "#f8fafc", "#cbd5e1", INK),
                 ("Layer 3  Proof Engine", "evidence matching  |  schema validation  |  semantic consistency  |  cross-field + span-boundary checks", "#eff6ff", "#93c5fd", BLUE),
-                ("Layer 4  H2O-Lightning-4B + adversarial verification", "one-token verdict with logprobs: does the evidence support the value?  |  challenger tries to refute (gray zone only)", "#eff6ff", "#93c5fd", BLUE),
+                ("Layer 4  Decision verifier + adversarial check", "typed support / completeness / field-kind probabilities  |  challenger tries to refute (gray zone only)", "#eff6ff", "#93c5fd", BLUE),
                 ("Layer 5  Cost-aware risk controller", "calibrated P(correct)  +  100:1 penalty  +  bootstrap uncertainty margin (threshold = 20th-percentile saving)", "#fff7ed", "#fdba74", ORANGE),
                 ("Layer 6  Adaptive router", "ACCEPT clear cases (cheap)  |  RECHECK the gray zone (2nd reader + challenger)  |  REVIEW the rest (a human, cost 1)", "#f0fdf4", "#86efac", GREEN)]
         for i, (t, s, f, e, c) in enumerate(rows):

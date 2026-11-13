@@ -94,13 +94,18 @@ def call_llm(content: list) -> str:
 
 
 def parse_json(reply: str) -> dict:
+    if not isinstance(reply, str) or not reply.strip():
+        raise ValueError("model response was empty")
     s = reply.strip()
     if s.startswith("```"):
-        s = s.strip("`").removeprefix("json").strip()
+        s = re.sub(r"^```(?:json)?\s*|\s*```$", "", s, flags=re.IGNORECASE).strip()
     try:
-        return json.loads(s[s.index("{"): s.rindex("}") + 1])
-    except ValueError:
-        return {}
+        answer = json.loads(s[s.index("{"): s.rindex("}") + 1])
+    except (ValueError, json.JSONDecodeError) as exc:
+        raise ValueError("model response did not contain a complete JSON object") from exc
+    if not isinstance(answer, dict):
+        raise ValueError("model response JSON root must be an object")
+    return answer
 
 
 def grounded(value, text: str | None) -> bool:
@@ -155,13 +160,16 @@ def extract(rec: dict) -> dict:
     answer = parse_json(call_llm(content))
     fields = {}
     for name in rec["schema"]["properties"]:
-        if name in answer:
-            a = answer[name]
-        else:
+        response_name = name
+        if response_name not in answer:
             kind = rec["schema"]["properties"][name].get("x-normalizer")
-            annotated_name = f"{name} [{kind}]" if kind else name
-            a = answer.get(annotated_name)
+            response_name = f"{name} [{kind}]" if kind else name
+        if response_name not in answer:
+            raise ValueError(f"model response omitted required field: {name}")
+        a = answer[response_name]
         a = a if isinstance(a, dict) else {"value": a}
+        if "value" not in a:
+            raise ValueError(f"model response omitted value for field: {name}")
         value, conf = a.get("value"), a.get("confidence", 0.5)
         try:
             conf = min(max(float(conf), 0.0), 1.0)
@@ -197,7 +205,9 @@ def main():
                 row = run_one(rec)
             except Exception as e:
                 print(f"[{i}] {rec['doc_id']}: {type(e).__name__}: {e}", file=sys.stderr)
-                row = {"doc_id": rec["doc_id"], "fields": {f: {"value": None} for f in rec["schema"]["properties"]}}
+                row = {"doc_id": rec["doc_id"], "error": "processing_failed",
+                       "fields": {f: {"value": None, "confidence": 0.0, "error": "processing_failed"}
+                                  for f in rec["schema"]["properties"]}}
             fout.write(json.dumps(row, ensure_ascii=False) + "\n")
             fout.flush()
             print(f"[{i}] {rec['doc_id']}", file=sys.stderr)

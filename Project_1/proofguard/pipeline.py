@@ -1,6 +1,6 @@
 """ProofGuard pipeline + Layer 6 Adaptive Router.
 
-  extract (L1-2) -> prove (L3) -> verify with H2O (L4) -> risk score (L5) -> route (L6):
+    extract (L1-2) -> prove (L3) -> verify (L4) -> risk score (L5) -> route (L6):
      ACCEPT   p >= hi                       no more spend
      REVIEW   p <  lo, hard proof failure,  never-automate field  -> a human (cost 1), no more spend
      RECHECK  lo <= p < hi                  independent second reader (other view / stronger model) + adversarial challenger, then re-score
@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import time
+import os
 import traceback
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -64,6 +65,9 @@ class ProofGuard:
             return {"doc_id": rec["doc_id"], "fields": empty}, trace
 
     def _run(self, rec: dict, specs: list, trace: dict, t0: float, document=None) -> tuple[dict, dict]:
+        if os.environ.get("PG_PIPELINE", "full") == "slim":
+            from .slim import run_slim
+            return run_slim(self, rec, specs, trace, t0, document)
         cfg, src = self.cfg, (rec.get("source_dataset") or rec["doc_id"].split(":", 1)[0])
         doc = document or load_document(rec, cfg.cache_dir, cfg.max_pages)
         defs = rec["schema"].get("$defs", {})

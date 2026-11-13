@@ -34,6 +34,7 @@ class Oracle:
             self.docs[r["doc_id"]] = (r, d, {s.name: s for s in flatten(r["schema"])})
         self.lock = threading.Lock()
         self.calls = {"extract": 0, "verify": 0, "challenge": 0, "other": 0}
+        self.decision_requests = []
 
     def find_doc(self, snippet: str):
         sn = re.sub(r"\s+", " ", snippet).strip()[:100]
@@ -80,7 +81,10 @@ def make_server(oracle: Oracle, port: int):
             self.wfile.write(data)
 
         def systemone(self, body):
-            """Simulated H2O decision API: P(yes) for each yes/no question about {field, proposed_value, document_excerpt}."""
+            """Simulated typed decision API for H2O and Microsoft Foundry plumbing tests."""
+            oracle.decision_requests.append({"path": self.path, "body": body,
+                                             "api_key": self.headers.get("api-key"),
+                                             "authorization": self.headers.get("Authorization")})
             oracle.calls["verify"] += 1
             st = body["state"]
             name, val, win = st["field"], st["proposed_value"], st["document_excerpt"]
@@ -90,7 +94,16 @@ def make_server(oracle: Oracle, port: int):
             clamp = lambda x: min(0.999, max(0.005, x))
             sup = clamp(rr.gauss(0.93, 0.07)) if ok else clamp(rr.gauss(0.22, 0.18))
             ans = {"supported": sup, "complete": clamp(sup + rr.gauss(0.03, 0.08)), "right_kind": clamp(0.5 * sup + 0.5 * (0.9 if ok else rr.gauss(0.5, 0.25)))}
-            out = {"model": "fake-h2o", "answers": {k: {"type": "noul", "noul": round(ans[k], 4)} for k in body["questions"] if k in ans},
+            decision_answers = {}
+            for key in body["questions"]:
+                if key not in ans:
+                    continue
+                probability = round(ans[key], 4)
+                if "decision" in str(body.get("model", "")).lower():
+                    decision_answers[key] = {"type": "noul", "probability": probability}
+                else:
+                    decision_answers[key] = {"type": "noul", "noul": probability}
+            out = {"model": body.get("model", "fake-h2o"), "answers": decision_answers,
                    "usage": {"input_tokens": len(json.dumps(st)) // 4, "output_tokens": 1, "latency_ms": 5}}
             data = json.dumps(out).encode()
             self.send_response(200); self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(data))); self.end_headers()

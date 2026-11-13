@@ -1,6 +1,6 @@
 """Layer 4: adversarial verification.
-  * Verifier (H2O-Lightning-4B or any model): one forward pass, one token. "Does this excerpt prove the value is right for this field?"
-    P(yes) is read from the first-token logprobs (a calibrated decision model is exactly what this slot needs); falls back to the text answer.
+    * Verifier (Microsoft Decision-1, legacy H2O SystemOne, or chat model): "Does this excerpt prove the value is right for this field?"
+        Typed decision APIs return a probability directly; chat models use first-token logprobs or a text fallback.
   * Challenger (any LLM, run only for gray-zone fields): actively tries to refute the value - contradictions, ambiguity, truncated clause, wrong field.
 Both see the *evidence neighbourhood*, not the whole document, so a 4B model is enough and a call costs a few hundred tokens."""
 from __future__ import annotations
@@ -86,7 +86,7 @@ class Verifier:
         self.v = None
         self.decision = None
         if cfg.verifier.ready:
-            if cfg.verifier.api == "systemone":
+            if cfg.verifier.api in ("systemone", "foundry"):
                 self.decision = DecisionClient(cfg.verifier, cfg.cache_dir, cfg.timeout)
                 self.v = self.decision
             else:
@@ -129,14 +129,14 @@ class Verifier:
     def _verify_decision(self, doc: Document, spec: FieldSpec, cand: Cand, window: str) -> VResult:
         state = {"field": spec.name, "field_meaning": meaning(spec), "proposed_value": cand.value[:1800],
                  "document_excerpt": window[:4200] or "(no readable text)"}
-        imgs = [u for _, u in self._images(doc, spec, cand)][:4]
+        imgs = [u for _, u in self._images(doc, spec, cand)][:4] if self.cfg.verifier.api == "systemone" else []
         try:
             pr = self.decision.ask(state, QUESTIONS, imgs or None)
         except LLMError:
             return VResult()
         if "supported" not in pr:
             return VResult()
-        return VResult(pr["supported"], "systemone", pr.get("complete"), pr.get("right_kind"))
+        return VResult(pr["supported"], self.cfg.verifier.api, pr.get("complete"), pr.get("right_kind"))
 
     def challenge(self, doc: Document, spec: FieldSpec, cand: Cand, window: str, start: int) -> CResult:
         if self.c is None or cand.value is None:

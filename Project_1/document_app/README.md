@@ -30,7 +30,7 @@ The backend reads `Project_1/.env` automatically. It expects LLM_BASE_URL (inclu
 
 - `frontend/`: plain HTML/CSS/JS, no build step. It communicates only with the HTTP API.
 - `backend/app.py`: upload validation, response normalization, API and static serving.
-- `backend/engine.py`: replaceable extraction adapter. Replace `extract_document(data, filename, schema)` with your future OCR, retrieval, verifier, H2O or other pipeline. Keep its return tuple `(fields, model, usage, source_text)` unchanged or implement an equivalent adapter.
+- `backend/engine.py`: replaceable extraction adapter. Replace `extract_document(data, filename, schema)` with your future OCR, retrieval, verifier, Microsoft Decision-1 or other pipeline. Keep its return tuple `(fields, model, usage, source_text)` unchanged or implement an equivalent adapter.
 - `POST /api/extract`: multipart file, JSON schema string, threshold; returns fields with name, value, confidence, evidence, page, reason, status plus run metadata.
 - `GET /api/health`: configuration status (no key).
 - API docs: http://127.0.0.1:8000/docs.
