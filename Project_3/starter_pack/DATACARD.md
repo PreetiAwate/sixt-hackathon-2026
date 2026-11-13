@@ -5,7 +5,7 @@ Each case is a **pair**: a good reply to a customer question (`original`) and an
 change. Some edits are **harmless** (the verdict must not change); some are **harmful** (the reply now violates the
 criterion, so a good judge flips from `pass` to `fail`). Build a method that improves the baseline judge.
 
-Judge 1 criterion: `JUDGE1_CRITERION.md` (does the reply over-promise?). Policy: `policy.md` (fictional).
+Judge 1 criterion: `JUDGE1_CRITERION.md` (does the reply over-promise?). Policy: `policy.md`.
 Near the end a **surprise criterion** is revealed: your recipe has to build a good judge for it too, unchanged. Only
 the inputs change, not your code: you get a new criterion file and a few labelled example pairs in the same format as
 `dev_pairs.jsonl`, and run your judge with `--criterion` set to the new file and `--dev` set to the new examples.
@@ -28,7 +28,7 @@ time (question, reply, language, criterion text, policy text), never the pair or
 | `my_judge.py` | A starting point for your judge, laid out as the four recipe steps. Copy it, fill the steps in. |
 | `RECIPE.md` | The one-page recipe you hand in. Fill it in as you go. |
 | `JUDGE1_CRITERION.md` | The criterion text, passed to your judge as a string |
-| `policy.md` | The fictional policy, passed to your judge as a string |
+| `policy.md` | The policy, passed to your judge as a string |
 | `baseline_judge.py` | The baseline: one LLM call per reply, any OpenAI-compatible endpoint. Set `JUDGE_LLM_BASE_URL`, `JUDGE_LLM_API_KEY` and `JUDGE_LLM_MODEL` (see its docstring). |
 | `run_judge.py` | Runs a judge file on a pairs file, writes `case_id,original,edited` verdicts |
 | `score.py` | Scores verdicts: `python3 score.py verdicts.csv dev_pairs.jsonl [--baseline baseline_dev_verdicts.csv]` |
