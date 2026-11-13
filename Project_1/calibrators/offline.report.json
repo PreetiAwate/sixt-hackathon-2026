@@ -1,0 +1,127 @@
+{
+ "threshold": 1.0001,
+ "oof": {
+  "threshold": 1.0001,
+  "p20_saving_pct": 0.0,
+  "point_saving_pct": 0.0,
+  "accepted_cand": 0,
+  "oof_precision": null
+ },
+ "sweep": [
+  {
+   "threshold": 0.5,
+   "accepted": 724,
+   "precision": 0.7624309392265194,
+   "net_saving_pct": -0.7450146959077549
+  },
+  {
+   "threshold": 0.7,
+   "accepted": 388,
+   "precision": 0.8479381443298969,
+   "net_saving_pct": -0.24924259552340042
+  },
+  {
+   "threshold": 0.8,
+   "accepted": 159,
+   "precision": 0.9308176100628931,
+   "net_saving_pct": -0.04255030522269952
+  },
+  {
+   "threshold": 0.9,
+   "accepted": 73,
+   "precision": 0.9863013698630136,
+   "net_saving_pct": -0.0012208907981008366
+  },
+  {
+   "threshold": 0.95,
+   "accepted": 19,
+   "precision": 1.0,
+   "net_saving_pct": 0.0008591453764413295
+  },
+  {
+   "threshold": 0.97,
+   "accepted": 3,
+   "precision": 1.0,
+   "net_saving_pct": 0.00013565453312231517
+  },
+  {
+   "threshold": 0.98,
+   "accepted": 1,
+   "precision": 1.0,
+   "net_saving_pct": 4.521817770743839e-05
+  },
+  {
+   "threshold": 0.99,
+   "accepted": 0,
+   "precision": null,
+   "net_saving_pct": 0.0
+  },
+  {
+   "threshold": 0.995,
+   "accepted": 0,
+   "precision": null,
+   "net_saving_pct": 0.0
+  },
+  {
+   "threshold": 0.999,
+   "accepted": 0,
+   "precision": null,
+   "net_saving_pct": 0.0
+  },
+  {
+   "threshold": 1.0001,
+   "accepted": 0,
+   "precision": null,
+   "net_saving_pct": 0.0
+  }
+ ],
+ "reliability": [
+  {
+   "bin": "0.00-0.50",
+   "n": 4905,
+   "mean_p": 0.10400535806899805,
+   "precision": 0.08950050968399592
+  },
+  {
+   "bin": "0.50-0.80",
+   "n": 565,
+   "mean_p": 0.6594661629888076,
+   "precision": 0.7150442477876107
+  },
+  {
+   "bin": "0.80-0.90",
+   "n": 86,
+   "mean_p": 0.8514152321175664,
+   "precision": 0.8837209302325582
+  },
+  {
+   "bin": "0.90-0.95",
+   "n": 54,
+   "mean_p": 0.9209663415876301,
+   "precision": 0.9814814814814815
+  },
+  {
+   "bin": "0.95-0.98",
+   "n": 18,
+   "mean_p": 0.9601971305394018,
+   "precision": 1.0
+  },
+  {
+   "bin": "0.98-0.99",
+   "n": 1,
+   "mean_p": 0.9835440894859103,
+   "precision": 1.0
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 0,
+   "mean_p": null,
+   "precision": null
+  }
+ ],
+ "never_automate": [
+  "cuad:Document Name",
+  "cuad:Governing Law"
+ ],
+ "break_even": 0.9900990099009901
+}
