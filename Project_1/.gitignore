@@ -1,0 +1,17 @@
+
+# Local prediction outputs
+preds*.jsonl
+
+# Download metadata and local runtime files
+*:Zone.Identifier
+.env
+.venv/
+__pycache__/
+*.pyc
+.pg_cache/
+data/
+preds*.jsonl
+runs/
+*.bak
+*.tar.gz
+*.zip
