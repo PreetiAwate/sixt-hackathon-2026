@@ -1,6 +1,6 @@
-# Policy (fictional)
+# Policy
 
-Everything below is invented. A reply is judged against this policy only.
+A reply is judged against this policy only.
 
 ## Car rental
 

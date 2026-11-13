@@ -1,21 +1,23 @@
 # Project 5: SIXT + TUM
 
-Build an AI-assisted workflow that answers business questions from linked company data.
+**Stage 1 is available now - 13 November 2026.**
 
-Inputs: each stage provides 25 CSV tables, 200 questions and business rules.
+**[Download the Stage 1 student dataset ZIP](releases/problem7_student_start.zip?raw=true)** | [SHA-256 checksum](releases/problem7_student_start.zip.sha256)
 
-Task: identify the relevant records, combine tables, apply the rules and calculate one answer per question. Run your method again on the separate final-stage dataset.
+Dataset version **7.0.0**: **37 CSV tables, 200 scored questions and 10 unscored practice examples with answer values**. The ZIP includes business rules, column descriptions, a blank answer CSV, a format checker and report/model-use templates.
 
-Submission: a CSV with the columns question_id and answer, supported by an explanation of your method and a presentation. The marking scheme shows the scoring and small-model bonus.
+Extract the ZIP and read `README.md`, `EVENT_RULES.md`, `business_rules.md` and `HARD_TASK_RULES.md`. Calculate the answers to `public_leaderboard_questions.csv` using this package's `datasets/` folder, then fill `public_answers.csv` with exactly `question_id,answer`. Submit it as `Project_5/public_answers.csv` through the channel and by the cutoff announced by the organizers. The checker tests file format, not answer correctness.
 
-Release: only the three invented toy examples are available now. Ioannis will release the competition data, questions and full instructions later.
+**Stage 2 will be released separately after Stage 1 submissions are locked.** This announcement authorizes Stage 1; preparation-time "local only" or "awaiting authorization" notices inside the unchanged ZIP are superseded for this stage.
 
-[Six-slide preview: two figures, task summary and one slide per toy example](STUDENT_GUIDE.pdf) · [Example CSVs and explanations](examples/README.md)
+The base grade is **65 points for dataset answers + 35 points for methods and presentation**. A verified qualifying small-model workflow earns **40 additional points**, for a maximum of **140**. Read `EVENT_RULES.md` for the complete criteria, model-size requirements and report submission process. Coordinate the report's arXiv upload with the organizers.
 
-For now, only explore the toy examples; setup instructions arrive with the challenge.
+[Six-slide introductory guide](STUDENT_GUIDE.pdf) | [Three solved toy examples](examples/README.md)
+
+The introductory visuals describe both stages; the Stage 1 release notice above takes precedence over their pre-event release wording.
 
 ![How the challenge works](assets/challenge_architecture.png)
 
 ![How the score works](assets/marking_scheme.png)
 
-Contact: **Ioannis Tzachristas** · [Email](mailto:ioannis.tzachristas@tum.de) · [LinkedIn](https://www.linkedin.com/in/ioannis-tzachristas-83a00522a/)
+Contact: **Ioannis Tzachristas** | [Email](mailto:ioannis.tzachristas@tum.de) | [LinkedIn](https://www.linkedin.com/in/ioannis-tzachristas-83a00522a/)
