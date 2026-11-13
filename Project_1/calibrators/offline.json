@@ -1,0 +1,6665 @@
+{
+ "s1": {
+  "names": [
+   "ext_conf",
+   "g_score",
+   "g_exact",
+   "g_applicable",
+   "ev_layer",
+   "ev_ocr",
+   "occ_log",
+   "ev_present",
+   "ev_found",
+   "ev_has_value",
+   "page_ok",
+   "bound_ok",
+   "sent_aligned",
+   "end_punct",
+   "schema_ok",
+   "pat_rule",
+   "pat_ok",
+   "label_prox",
+   "cue_rx",
+   "cue_lm",
+   "pos_early",
+   "len_log",
+   "very_long",
+   "dup_n",
+   "overlap_n",
+   "date_conflict",
+   "is_cuad",
+   "kind_bool",
+   "kind_json",
+   "kind_num",
+   "prior_prec_logit",
+   "prior_null",
+   "prior_n_log",
+   "v_avail",
+   "v_logit",
+   "v_p"
+  ],
+  "mean": [
+   0.5090994951962221,
+   0.9889268848721706,
+   0.9889268848721706,
+   1.0,
+   0.8384627910763719,
+   0.16153720892362808,
+   0.7528573033707865,
+   0.3434294088910601,
+   0.3434294088910601,
+   0.3378928513271454,
+   0.5389187428757531,
+   0.9634424360853281,
+   0.795880149812734,
+   0.6518482331867774,
+   1.0,
+   0.016446832763393582,
+   0.009933235629376322,
+   0.6064294414590458,
+   0.6034304510666015,
+   0.5574014981273407,
+   0.5385930630190523,
+   4.644097296857189,
+   0.0,
+   0.08695652173913043,
+   0.17749552190197038,
+   0.0008141996417521576,
+   0.7344080768604462,
+   0.0,
+   0.0,
+   0.012212994626282364,
+   -1.3944911418013803,
+   0.4695465194466717,
+   4.072848809477119,
+   0.0,
+   0.0,
+   0.5
+  ],
+  "std": [
+   0.11598850532391083,
+   0.10464464271617148,
+   0.10464464271617148,
+   1e-06,
+   0.36802573151451273,
+   0.36802573151451273,
+   0.27761060656174713,
+   0.47485329313357105,
+   0.47485329313357105,
+   0.47299183116535637,
+   0.13395783997529812,
+   0.17382111677963868,
+   0.39679668490300957,
+   0.47638441838294215,
+   1e-06,
+   0.12718621959727613,
+   0.09916938267080022,
+   0.222920738152854,
+   0.2748764953396735,
+   0.25279832878729913,
+   0.13405203066229182,
+   1.4125819657636987,
+   1e-06,
+   0.30401032767686875,
+   0.47034339423937577,
+   0.02852256511423067,
+   0.44164788406895733,
+   1e-06,
+   1e-06,
+   0.10983550149446562,
+   1.2910204535791738,
+   0.2547025342244406,
+   1.560971399285367,
+   1e-06,
+   1e-06,
+   1e-06
+  ],
+  "w": [
+   0.46576736136051705,
+   0.035366538650587906,
+   0.035366538650587906,
+   0.0,
+   0.45329923008590634,
+   -0.4532992300859127,
+   0.0738992144184952,
+   -0.16620682697083833,
+   -0.16620682697083833,
+   0.7553334521125448,
+   -0.19352265486585055,
+   0.1242270752081228,
+   0.213086800809397,
+   0.14249182717669706,
+   0.0,
+   -0.32306217664156656,
+   0.42524252888178815,
+   0.028096377271092685,
+   -0.7296444132824765,
+   0.7901447024941646,
+   -0.3960451262045131,
+   -0.7394766402659438,
+   0.0,
+   -0.06670869640788535,
+   0.09756536592518572,
+   0.040173206726725565,
+   0.06130699691052565,
+   0.0,
+   0.0,
+   0.20543437108788085,
+   1.2402274774432518,
+   -0.0278817217566629,
+   0.48917316455166987,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "b": -2.0975934118450885
+ },
+ "s2": {
+  "names": [
+   "ext_conf",
+   "g_score",
+   "g_exact",
+   "g_applicable",
+   "ev_layer",
+   "ev_ocr",
+   "occ_log",
+   "ev_present",
+   "ev_found",
+   "ev_has_value",
+   "page_ok",
+   "bound_ok",
+   "sent_aligned",
+   "end_punct",
+   "schema_ok",
+   "pat_rule",
+   "pat_ok",
+   "label_prox",
+   "cue_rx",
+   "cue_lm",
+   "pos_early",
+   "len_log",
+   "very_long",
+   "dup_n",
+   "overlap_n",
+   "date_conflict",
+   "is_cuad",
+   "kind_bool",
+   "kind_json",
+   "kind_num",
+   "prior_prec_logit",
+   "prior_null",
+   "prior_n_log",
+   "v_avail",
+   "v_logit",
+   "v_p",
+   "c_ran",
+   "c_contra",
+   "c_amb",
+   "c_sev",
+   "c_alt_diff",
+   "r_ran",
+   "r_agree",
+   "r_sim",
+   "r_null"
+  ],
+  "mean": [
+   0.5090994951962221,
+   0.9889268848721706,
+   0.9889268848721706,
+   1.0,
+   0.8384627910763719,
+   0.16153720892362808,
+   0.7528573033707865,
+   0.3434294088910601,
+   0.3434294088910601,
+   0.3378928513271454,
+   0.5389187428757531,
+   0.9634424360853281,
+   0.795880149812734,
+   0.6518482331867774,
+   1.0,
+   0.016446832763393582,
+   0.009933235629376322,
+   0.6064294414590458,
+   0.6034304510666015,
+   0.5574014981273407,
+   0.5385930630190523,
+   4.644097296857189,
+   0.0,
+   0.08695652173913043,
+   0.17749552190197038,
+   0.0008141996417521576,
+   0.7344080768604462,
+   0.0,
+   0.0,
+   0.012212994626282364,
+   -1.3944911418013803,
+   0.4695465194466717,
+   4.072848809477119,
+   0.0,
+   0.0,
+   0.5,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "std": [
+   0.11598850532391083,
+   0.10464464271617148,
+   0.10464464271617148,
+   1e-06,
+   0.36802573151451273,
+   0.36802573151451273,
+   0.27761060656174713,
+   0.47485329313357105,
+   0.47485329313357105,
+   0.47299183116535637,
+   0.13395783997529812,
+   0.17382111677963868,
+   0.39679668490300957,
+   0.47638441838294215,
+   1e-06,
+   0.12718621959727613,
+   0.09916938267080022,
+   0.222920738152854,
+   0.2748764953396735,
+   0.25279832878729913,
+   0.13405203066229182,
+   1.4125819657636987,
+   1e-06,
+   0.30401032767686875,
+   0.47034339423937577,
+   0.02852256511423067,
+   0.44164788406895733,
+   1e-06,
+   1e-06,
+   0.10983550149446562,
+   1.2910204535791738,
+   0.2547025342244406,
+   1.560971399285367,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06,
+   1e-06
+  ],
+  "w": [
+   0.4657673613605167,
+   0.03536653865058791,
+   0.03536653865058791,
+   0.0,
+   0.4532992300859064,
+   -0.4532992300859127,
+   0.07389921441849519,
+   -0.1662068269708374,
+   -0.1662068269708374,
+   0.7553334521125441,
+   -0.19352265486585135,
+   0.12422707520812273,
+   0.213086800809397,
+   0.14249182717669706,
+   0.0,
+   -0.32306217664156467,
+   0.4252425288817867,
+   0.028096377271092696,
+   -0.7296444132824761,
+   0.7901447024941646,
+   -0.39604512620451265,
+   -0.7394766402659437,
+   0.0,
+   -0.06670869640788543,
+   0.0975653659251857,
+   0.040173206726725565,
+   0.06130699691052677,
+   0.0,
+   0.0,
+   0.20543437108788082,
+   1.2402274774432518,
+   -0.027881721756663005,
+   0.4891731645516697,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "b": -2.0975934118450885
+ },
+ "priors": {
+  "extractbench:final_k1": [
+   15,
+   0,
+   0,
+   0
+  ],
+  "extractbench:amended_k1": [
+   15,
+   0,
+   0,
+   0
+  ],
+  "extractbench:partnership_ein": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:partnership_name": [
+   6,
+   3,
+   0,
+   0
+  ],
+  "extractbench:partnership_address": [
+   6,
+   3,
+   0,
+   0
+  ],
+  "extractbench:irs_center": [
+   15,
+   12,
+   0,
+   0
+  ],
+  "extractbench:is_publicly_traded_partnership": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:partner_id": [
+   6,
+   6,
+   0,
+   0
+  ],
+  "extractbench:partner_name": [
+   6,
+   5,
+   0,
+   0
+  ],
+  "extractbench:partner_address": [
+   6,
+   5,
+   0,
+   0
+  ],
+  "extractbench:is_general_partner": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:is_domestic_partner": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:partner_entity_type": [
+   6,
+   6,
+   0,
+   0
+  ],
+  "extractbench:profit_share_beginning": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:profit_share_ending": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_share_beginning": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_share_ending": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:capital_share_beginning": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:capital_share_ending": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:liability_nonrecourse": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:liability_qualified_nonrecourse_financing": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:liability_recourse": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:capital_beginning_account": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:capital_contributed": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:capital_current_year_increase_decrease": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:capital_withdrawals_distributions": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:capital_ending_account": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:capital_account_method": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:contributed_built_in_gain_loss_property": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_1_ordinary_business_income": [
+   15,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_2_net_rental_real_estate": [
+   15,
+   0,
+   0,
+   15
+  ],
+  "extractbench:box_3_other_net_rental_income": [
+   15,
+   0,
+   0,
+   15
+  ],
+  "extractbench:box_4_guaranteed_payments": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_5_interest_income": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_6a_ordinary_dividends": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_6b_qualified_dividends": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_7_royalties": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_8_net_short_term_capital_gain": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_9a_net_long_term_capital_gain": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_9b_collectibles_gain": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_9c_unrecaptured_1250_gain": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_10_net_section_1231_gain": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_12_section_179_deduction": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_14_self_employment_earnings": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_11_other_income": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_13_other_deductions": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_15_credits": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_16_foreign_transactions": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_17_amt_items": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_18_tax_exempt_income": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_19_distributions": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:box_20_other_information": [
+   6,
+   0,
+   0,
+   6
+  ],
+  "extractbench:corporation_ein": [
+   9,
+   0,
+   0,
+   0
+  ],
+  "extractbench:corporation_name": [
+   9,
+   6,
+   0,
+   0
+  ],
+  "extractbench:corporation_address": [
+   9,
+   6,
+   0,
+   0
+  ],
+  "extractbench:shareholder_id": [
+   9,
+   9,
+   0,
+   0
+  ],
+  "extractbench:shareholder_name": [
+   9,
+   4,
+   0,
+   0
+  ],
+  "extractbench:shareholder_address": [
+   9,
+   4,
+   0,
+   0
+  ],
+  "extractbench:shareholder_stock_ownership_pct": [
+   9,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_4_interest_income": [
+   9,
+   0,
+   0,
+   8
+  ],
+  "extractbench:box_5a_ordinary_dividends": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_5b_qualified_dividends": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_6_royalties": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_7_net_short_term_capital_gain": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_8a_net_long_term_capital_gain": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_8b_collectibles_gain": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_8c_unrecaptured_1250_gain": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_9_net_section_1231_gain": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_11_section_179_deduction": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_10_other_income": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_12_other_deductions": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_13_credits": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_14_foreign_transactions": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_15_amt_items": [
+   9,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_16_items_affecting_shareholder_basis": [
+   9,
+   0,
+   0,
+   9
+  ],
+  "extractbench:box_17_other_information": [
+   9,
+   0,
+   0,
+   8
+  ],
+  "extractbench:operator_name": [
+   26,
+   18,
+   9,
+   0
+  ],
+  "extractbench:operator_p5_no": [
+   13,
+   6,
+   0,
+   0
+  ],
+  "extractbench:rrc_district_no_and_county": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:mailing_address": [
+   5,
+   5,
+   0,
+   0
+  ],
+  "extractbench:recovery_waterflood": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_co2_augmented_waterflooding": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_polymer_augmented_waterflooding": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_immiscible_co2_displacement": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_steam_drive_injection": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_gas_injection": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_microemulsion_micellar_flooding": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_alkaline_caustic_flooding": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_cyclic_steam_injection": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_in_situ_combustion": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_miscible_fluid_displacement": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_other": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:recovery_other_specify": [
+   5,
+   0,
+   0,
+   5
+  ],
+  "extractbench:new_initial_secondary": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:new_initial_tertiary": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:new_tertiary_superseding_secondary": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:exp_different_secondary_method": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:exp_expansion_secondary": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:exp_different_tertiary_method": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:exp_expansion_tertiary": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:change_previous_method": [
+   5,
+   5,
+   0,
+   5
+  ],
+  "extractbench:change_previous_fluid": [
+   5,
+   5,
+   0,
+   5
+  ],
+  "extractbench:fluid_brackish_water": [
+   13,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_saltwater": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_natural_gas": [
+   13,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_fresh_water": [
+   13,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_air": [
+   13,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_polymer": [
+   13,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_nitrogen": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_lpg": [
+   13,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_co2": [
+   13,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_other": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_other_specify": [
+   5,
+   4,
+   0,
+   5
+  ],
+  "extractbench:est_avg_volume_fluid_injected": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:est_avg_injection_pressure": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:est_ult_additional_production_oil": [
+   5,
+   5,
+   0,
+   0
+  ],
+  "extractbench:est_ult_additional_production_gas": [
+   5,
+   0,
+   0,
+   3
+  ],
+  "extractbench:est_total_value_oil": [
+   5,
+   5,
+   0,
+   0
+  ],
+  "extractbench:est_total_value_gas": [
+   5,
+   0,
+   0,
+   3
+  ],
+  "extractbench:est_cost_machinery": [
+   5,
+   5,
+   0,
+   2
+  ],
+  "extractbench:est_cost_project_total": [
+   5,
+   5,
+   0,
+   0
+  ],
+  "extractbench:anticipated_date_injection_begin": [
+   5,
+   1,
+   0,
+   0
+  ],
+  "extractbench:multiple_lease_yes": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:multiple_lease_no": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_anticipated_leases": [
+   5,
+   2,
+   0,
+   0
+  ],
+  "extractbench:total_anticipated_producing_wells": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_anticipated_injection_wells": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:field_name": [
+   24,
+   16,
+   11,
+   0
+  ],
+  "extractbench:lease_or_unit_name": [
+   5,
+   5,
+   0,
+   0
+  ],
+  "extractbench:lease_no": [
+   16,
+   16,
+   0,
+   0
+  ],
+  "extractbench:unitization_approved_yes": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:unitization_approved_no": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:unitization_order_no_and_date": [
+   5,
+   0,
+   0,
+   2
+  ],
+  "extractbench:unitization_needed_yes": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:unitization_needed_no": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:inj_auth_a_granted": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:inj_auth_a_project_no": [
+   5,
+   0,
+   0,
+   1
+  ],
+  "extractbench:inj_auth_a_authority_date": [
+   5,
+   0,
+   0,
+   2
+  ],
+  "extractbench:inj_auth_a_wells": [
+   5,
+   0,
+   0,
+   2
+  ],
+  "extractbench:inj_auth_b_applied": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:inj_auth_b_applied_date": [
+   5,
+   0,
+   0,
+   4
+  ],
+  "extractbench:inj_auth_b_project_no": [
+   5,
+   0,
+   0,
+   3
+  ],
+  "extractbench:inj_auth_b_wells": [
+   5,
+   0,
+   0,
+   4
+  ],
+  "extractbench:inj_auth_c_anticipated": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:inj_auth_c_wells": [
+   5,
+   0,
+   0,
+   4
+  ],
+  "extractbench:signature_present": [
+   37,
+   0,
+   0,
+   0
+  ],
+  "extractbench:title": [
+   27,
+   9,
+   1,
+   0
+  ],
+  "extractbench:name_print_or_type": [
+   5,
+   5,
+   0,
+   0
+  ],
+  "extractbench:certificate_date": [
+   37,
+   0,
+   0,
+   0
+  ],
+  "extractbench:phone": [
+   13,
+   5,
+   0,
+   0
+  ],
+  "extractbench:rrc_approved": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:rrc_denied": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:rrc_technical_examiner": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:rrc_action_date": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:filing_manager_name": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:report_calendar_quarter_end": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:is_amendment": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:amendment_type": [
+   3,
+   3,
+   0,
+   3
+  ],
+  "extractbench:report_type": [
+   3,
+   3,
+   3,
+   0
+  ],
+  "extractbench:is_confidential_omitted": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:table_entry_total": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:table_value_total_usd": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:holdings": [
+   7,
+   0,
+   0,
+   0
+  ],
+  "extractbench:p1_file_no": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p1_district_no": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p1_company": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_address": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_sec_no": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p1_block_no": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_survey": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_county": [
+   8,
+   8,
+   2,
+   0
+  ],
+  "extractbench:p1_well_no": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_name_of_lease": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_no_of_acres": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_elev": [
+   8,
+   1,
+   0,
+   3
+  ],
+  "extractbench:p1_name_of_field": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_located_miles": [
+   8,
+   4,
+   0,
+   0
+  ],
+  "extractbench:p1_located_direction": [
+   8,
+   5,
+   0,
+   0
+  ],
+  "extractbench:p1_located_from": [
+   8,
+   5,
+   0,
+   0
+  ],
+  "extractbench:p1_form1_filed_in_name_of": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:p1_drilling_commenced": [
+   8,
+   7,
+   0,
+   0
+  ],
+  "extractbench:p1_drilling_completed": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_ever_produced_oil": [
+   8,
+   7,
+   0,
+   0
+  ],
+  "extractbench:p1_ever_produced_gas": [
+   8,
+   7,
+   0,
+   0
+  ],
+  "extractbench:p1_character_of_well": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_total_depth": [
+   8,
+   8,
+   0,
+   0
+  ],
+  "extractbench:p1_date_wish_to_plug": [
+   8,
+   7,
+   0,
+   0
+  ],
+  "extractbench:p1_party_plugging_well": [
+   8,
+   7,
+   0,
+   0
+  ],
+  "extractbench:p1_party_plugging_address": [
+   8,
+   6,
+   0,
+   0
+  ],
+  "extractbench:p1_correspondence_name": [
+   8,
+   7,
+   0,
+   0
+  ],
+  "extractbench:p1_correspondence_address": [
+   8,
+   6,
+   0,
+   0
+  ],
+  "extractbench:p1_init_prod_gas_volume": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p1_init_prod_gas_pressure": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p1_init_prod_oil_barrels": [
+   8,
+   7,
+   0,
+   0
+  ],
+  "extractbench:p1_general_remarks": [
+   8,
+   4,
+   0,
+   8
+  ],
+  "extractbench:p2_file_no": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p2_district_no": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p2_company": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_address": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_sec_no": [
+   8,
+   8,
+   0,
+   8
+  ],
+  "extractbench:p2_block_no": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_survey": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_county": [
+   8,
+   8,
+   2,
+   1
+  ],
+  "extractbench:p2_well_no": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_name_of_lease": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_no_of_acres": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_elev": [
+   8,
+   1,
+   0,
+   8
+  ],
+  "extractbench:p2_name_of_field": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_form1_filed_in_name_of": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:p2_date_well_plugged": [
+   8,
+   5,
+   0,
+   1
+  ],
+  "extractbench:p2_completion_oil": [
+   8,
+   6,
+   0,
+   8
+  ],
+  "extractbench:p2_completion_gas": [
+   8,
+   6,
+   0,
+   8
+  ],
+  "extractbench:p2_completion_dry": [
+   8,
+   2,
+   0,
+   2
+  ],
+  "extractbench:p2_amount_plugged_oil": [
+   8,
+   6,
+   0,
+   7
+  ],
+  "extractbench:p2_amount_plugged_gas": [
+   8,
+   7,
+   0,
+   8
+  ],
+  "extractbench:p2_amount_plugged_water": [
+   8,
+   7,
+   0,
+   8
+  ],
+  "extractbench:p2_ever_produced_oil_or_gas": [
+   8,
+   7,
+   0,
+   2
+  ],
+  "extractbench:p2_total_depth": [
+   8,
+   8,
+   0,
+   1
+  ],
+  "extractbench:p2_top_of_producing_sand": [
+   8,
+   7,
+   0,
+   1
+  ],
+  "extractbench:p2_filled_with_mud_laden_fluid": [
+   8,
+   7,
+   0,
+   2
+  ],
+  "extractbench:p2_how_mud_applied": [
+   8,
+   7,
+   0,
+   1
+  ],
+  "extractbench:p2_were_plugs_used": [
+   8,
+   7,
+   0,
+   1
+  ],
+  "extractbench:p2_was_well_shot": [
+   8,
+   7,
+   0,
+   8
+  ],
+  "extractbench:p2_plugs_detail": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:p2_depth_thickness_formations": [
+   8,
+   6,
+   2,
+   1
+  ],
+  "extractbench:p2_abandoned_wells_plugged": [
+   8,
+   7,
+   0,
+   1
+  ],
+  "extractbench:p2_manner_of_confining": [
+   8,
+   7,
+   0,
+   3
+  ],
+  "extractbench:p2_adjacent_owners": [
+   8,
+   7,
+   0,
+   1
+  ],
+  "extractbench:p2_notice_given_adjacent_owners": [
+   8,
+   7,
+   0,
+   1
+  ],
+  "extractbench:p2_affiant_name": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:p2_affiant_signature_name": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:p2_affiant_title": [
+   8,
+   0,
+   0,
+   2
+  ],
+  "extractbench:p2_sworn_day": [
+   8,
+   6,
+   0,
+   1
+  ],
+  "extractbench:p2_sworn_month": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:p2_sworn_year": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:p2_notary_signature": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:p2_notary_county": [
+   8,
+   6,
+   0,
+   1
+  ],
+  "extractbench:p2_correspondence_name": [
+   8,
+   7,
+   0,
+   1
+  ],
+  "extractbench:p2_correspondence_address": [
+   8,
+   6,
+   0,
+   1
+  ],
+  "extractbench:casing_tubing_records": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:claim_number": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:policy_number": [
+   2,
+   1,
+   0,
+   2
+  ],
+  "extractbench:loss_type": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:loss_date": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:reported_date": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:valuation_report_date": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:valuation_report_id": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:version_number": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:prepared_for": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:prepared_for_phone": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:owner": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_vehicle": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:valuation_summary": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:search_radius_miles": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:typical_mileage_for_this_vehicle": [
+   2,
+   2,
+   2,
+   0
+  ],
+  "extractbench:overall_condition": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:typical_vehicle_condition": [
+   2,
+   2,
+   1,
+   0
+  ],
+  "extractbench:comparable_vehicles": [
+   4,
+   0,
+   0,
+   0
+  ],
+  "extractbench:payer_name": [
+   16,
+   15,
+   0,
+   0
+  ],
+  "extractbench:payer_address": [
+   14,
+   14,
+   0,
+   0
+  ],
+  "extractbench:payer_phone": [
+   14,
+   0,
+   0,
+   14
+  ],
+  "extractbench:payer_federal_id": [
+   16,
+   15,
+   0,
+   0
+  ],
+  "extractbench:account_number": [
+   19,
+   18,
+   14,
+   0
+  ],
+  "extractbench:recipient_name": [
+   16,
+   15,
+   0,
+   0
+  ],
+  "extractbench:recipient_address": [
+   14,
+   14,
+   0,
+   0
+  ],
+  "extractbench:recipient_tax_id": [
+   14,
+   14,
+   0,
+   0
+  ],
+  "extractbench:corrected": [
+   14,
+   0,
+   0,
+   0
+  ],
+  "extractbench:second_tin_notice": [
+   14,
+   0,
+   0,
+   0
+  ],
+  "extractbench:transactions": [
+   14,
+   0,
+   0,
+   0
+  ],
+  "extractbench:section_subtotals": [
+   14,
+   0,
+   0,
+   13
+  ],
+  "extractbench:operator": [
+   22,
+   21,
+   0,
+   0
+  ],
+  "extractbench:operator_number": [
+   12,
+   11,
+   0,
+   0
+  ],
+  "extractbench:rrc_district": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:street_or_po_box": [
+   12,
+   11,
+   0,
+   0
+  ],
+  "extractbench:city": [
+   12,
+   8,
+   0,
+   0
+  ],
+  "extractbench:state": [
+   12,
+   12,
+   0,
+   0
+  ],
+  "extractbench:zip_code": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:lease_facility_operation_name": [
+   12,
+   10,
+   0,
+   0
+  ],
+  "extractbench:field_or_area_name": [
+   12,
+   6,
+   0,
+   0
+  ],
+  "extractbench:county": [
+   43,
+   19,
+   8,
+   2
+  ],
+  "extractbench:optype_a_oil_field": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:optype_b_gas_field": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:optype_c_pipeline_gathering": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:optype_d_gasoline_plant": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:optype_e_drilling_workover": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:optype_f_sweetening_unit": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:optype_g_combination": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:optype_h_other": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operation_type_other_explanation": [
+   12,
+   3,
+   0,
+   4
+  ],
+  "extractbench:h2s_concentration": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:maximum_escape_volume": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:roe_100ppm": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:roe_500ppm": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operation_existing": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operation_new": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:modification_cert_change_yes": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:modification_cert_change_no": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:workover_100ppm_3000ft_yes": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:workover_100ppm_3000ft_no": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:previous_certificate_number": [
+   12,
+   11,
+   0,
+   9
+  ],
+  "extractbench:roe_100ppm_public_area_yes": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:roe_100ppm_public_area_no": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:roe_500ppm_public_road_yes": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:roe_500ppm_public_road_no": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:injection_h2s_fluid_yes": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:injection_h2s_fluid_no": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:compliance_date_mo": [
+   12,
+   7,
+   0,
+   9
+  ],
+  "extractbench:compliance_date_day": [
+   12,
+   0,
+   0,
+   9
+  ],
+  "extractbench:compliance_date_year": [
+   12,
+   0,
+   0,
+   8
+  ],
+  "extractbench:depth_of_compliance_drilling": [
+   12,
+   0,
+   0,
+   3
+  ],
+  "extractbench:contingency_plan_prepared_yes": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:contingency_plan_prepared_no": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:contingency_plan_location": [
+   12,
+   0,
+   0,
+   2
+  ],
+  "extractbench:data_location": [
+   12,
+   9,
+   0,
+   0
+  ],
+  "extractbench:representative_of_company": [
+   12,
+   1,
+   0,
+   12
+  ],
+  "extractbench:phone_no": [
+   15,
+   6,
+   0,
+   3
+  ],
+  "extractbench:approved_by": [
+   12,
+   12,
+   0,
+   0
+  ],
+  "extractbench:rrc_use_date": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:remarks": [
+   14,
+   13,
+   0,
+   11
+  ],
+  "extractbench:certification_number": [
+   12,
+   10,
+   0,
+   0
+  ],
+  "extractbench:exempt_stamp_present": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operations_covered": [
+   12,
+   0,
+   0,
+   0
+  ],
+  "extractbench:reporting_period": [
+   10,
+   10,
+   0,
+   0
+  ],
+  "extractbench:operator_no": [
+   21,
+   21,
+   0,
+   0
+  ],
+  "extractbench:address_street_or_box": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:address_city": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:address_state": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:address_zip_code": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_monthly_report": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:purpose_corrected_report": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_initial_report": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:purpose_final_report": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:consolidated_p18_yes": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:consolidated_p18_no": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:system_serial_no": [
+   10,
+   9,
+   0,
+   0
+  ],
+  "extractbench:district_and_lease_no": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:gathering_system_facility_name": [
+   10,
+   6,
+   0,
+   0
+  ],
+  "extractbench:rrc_district_no": [
+   20,
+   2,
+   0,
+   0
+  ],
+  "extractbench:distance_from_nearest_town": [
+   10,
+   8,
+   1,
+   0
+  ],
+  "extractbench:direction_from_nearest_town": [
+   10,
+   8,
+   1,
+   0
+  ],
+  "extractbench:nearest_town": [
+   10,
+   8,
+   0,
+   1
+  ],
+  "extractbench:survey": [
+   12,
+   9,
+   0,
+   1
+  ],
+  "extractbench:section": [
+   12,
+   12,
+   0,
+   6
+  ],
+  "extractbench:block": [
+   12,
+   8,
+   0,
+   8
+  ],
+  "extractbench:abstract_no": [
+   12,
+   2,
+   0,
+   3
+  ],
+  "extractbench:township": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:league": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:labor": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:porcion": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:share": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:tract": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:lot": [
+   10,
+   1,
+   0,
+   9
+  ],
+  "extractbench:disposal_api_numbers": [
+   10,
+   0,
+   0,
+   8
+  ],
+  "extractbench:disposal_well_lease_and_well_no": [
+   10,
+   0,
+   0,
+   2
+  ],
+  "extractbench:disposal_well_uic_no": [
+   10,
+   8,
+   0,
+   3
+  ],
+  "extractbench:disposal_method_recycling": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:disposal_method_land_application": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:disposal_method_discharge": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:disposal_method_other": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:disposal_method_other_text": [
+   10,
+   0,
+   0,
+   9
+  ],
+  "extractbench:disposal_method_permit_no": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec3_l1_num_oil_gas_wells": [
+   10,
+   0,
+   0,
+   1
+  ],
+  "extractbench:sec3_l2_water_from_producing": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec3_l3_water_from_nonproducing": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec3_l4_total_texas_water": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec3_l5_state_ok": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec3_l5_state_la": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec3_l5_state_nm": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec3_l5_state_other": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec3_l5_state_other_text": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec3_l5_out_of_state_water": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec3_l6_skimmed_total": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec3_l7_tolerance": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec3_l8_excess_to_leases": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec3_l9_slugs_credited": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec3_l10_excess_not_credited": [
+   10,
+   0,
+   0,
+   1
+  ],
+  "extractbench:sec4_l1_storage_beginning": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec4_l2_skimmed_not_allocated": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec4_l3_sold": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:sec4_l4_transferred": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec4_l5_bsw_collected": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:sec4_l6_storage_end": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:print_name": [
+   10,
+   3,
+   0,
+   0
+  ],
+  "extractbench:telephone_area_code": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:telephone_number": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:email_optional": [
+   10,
+   0,
+   0,
+   10
+  ],
+  "extractbench:gatherer_entries": [
+   10,
+   0,
+   0,
+   7
+  ],
+  "extractbench:api_no": [
+   10,
+   2,
+   0,
+   2
+  ],
+  "extractbench:drilling_permit_no": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:rrc_operator_no": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:operator_address": [
+   10,
+   2,
+   0,
+   0
+  ],
+  "extractbench:lease_name": [
+   21,
+   1,
+   0,
+   0
+  ],
+  "extractbench:well_no": [
+   21,
+   15,
+   0,
+   0
+  ],
+  "extractbench:purpose_new_drill": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_recompletion": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_reclass": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_field_transfer": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_re_enter": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_amended": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:purpose_amended_as_drilled": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:profile_vertical": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:profile_horizontal": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:profile_directional": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:profile_sidetrack": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:true_vertical_depth": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:rule36_hydrogen_sulfide_yes": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:rule36_hydrogen_sulfide_no": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:q11_right_to_develop_minerals_row_yes": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:q11_right_to_develop_minerals_row_no": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:surface_land": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:surface_bay_estuary": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:surface_inland_waterway": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:surface_offshore": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:well_located_miles": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:well_located_direction": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:well_located_nearest_town": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:distance_to_nearest_lease_line": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:number_total_acres": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:lease_perp_1_ft": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:lease_perp_1_line": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:lease_perp_2_ft": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:lease_perp_2_line": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:survey_perp_1_ft": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:survey_perp_1_line": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:survey_perp_2_ft": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:survey_perp_2_line": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:q25_pooled_unit_yes": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:q25_pooled_unit_no": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:unitization_docket_no": [
+   2,
+   2,
+   0,
+   2
+  ],
+  "extractbench:q27_substandard_acreage_yes": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:q27_substandard_acreage_no": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:swr_exception_case_docket_no": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:name_of_representative": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:telephone": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:email_address": [
+   5,
+   0,
+   0,
+   5
+  ],
+  "extractbench:completion_fields": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operator_name_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:operator_p5_no_review": [
+   8,
+   1,
+   0,
+   8
+  ],
+  "extractbench:operator_address_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:county_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:rrc_district_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:field_name_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:field_number": [
+   19,
+   11,
+   11,
+   0
+  ],
+  "extractbench:field_number_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:lease_name_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:lease_gas_id_no": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:lease_gas_id_no_review": [
+   8,
+   0,
+   0,
+   5
+  ],
+  "extractbench:well_is": [
+   8,
+   2,
+   0,
+   0
+  ],
+  "extractbench:well_is_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:no_acres_in_lease": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:no_acres_in_lease_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:legal_description": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:legal_description_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:latitude": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:latitude_review": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:longitude": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:longitude_review": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:new_permit_yes": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:new_permit_yes_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:new_permit_no": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:new_permit_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:amendment_permit_no": [
+   8,
+   0,
+   0,
+   5
+  ],
+  "extractbench:amendment_permit_no_review": [
+   8,
+   0,
+   0,
+   2
+  ],
+  "extractbench:uic_no": [
+   19,
+   11,
+   0,
+   3
+  ],
+  "extractbench:uic_no_review": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:reason_pressure": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:reason_pressure_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:reason_volume": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:reason_volume_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:reason_interval": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:reason_interval_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:reason_commercial": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:reason_commercial_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:reason_other_explain": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:reason_other_explain_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:well_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:api_no_review": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:date_drilled": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:date_drilled_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:total_depth": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_depth_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:plug_date": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:plug_date_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:casing_records": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:deepest_freshwater_zone": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:deepest_freshwater_zone_review": [
+   8,
+   0,
+   0,
+   3
+  ],
+  "extractbench:multiple_completion_yes": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:multiple_completion_yes_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:multiple_completion_no": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:multiple_completion_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:multistage_cement_yes": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:multistage_cement_yes_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:multistage_cement_no": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:multistage_cement_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:multistage_dv_tool_depth": [
+   8,
+   0,
+   0,
+   4
+  ],
+  "extractbench:multistage_dv_tool_depth_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:multistage_no_sacks": [
+   8,
+   0,
+   0,
+   4
+  ],
+  "extractbench:multistage_no_sacks_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:multistage_top_of_cement": [
+   8,
+   0,
+   0,
+   4
+  ],
+  "extractbench:multistage_top_of_cement_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:bridge_plug_depth": [
+   8,
+   0,
+   0,
+   3
+  ],
+  "extractbench:bridge_plug_depth_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:injection_tubing_size": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:injection_tubing_size_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:injection_tubing_depth": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:injection_tubing_depth_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:packer_depth": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:packer_depth_review": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:cement_squeeze_operations": [
+   8,
+   0,
+   0,
+   3
+  ],
+  "extractbench:cement_squeeze_operations_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:injection_interval_from": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:injection_interval_from_review": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:injection_interval_to": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:injection_interval_to_review": [
+   8,
+   0,
+   0,
+   7
+  ],
+  "extractbench:disposal_formation": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:disposal_formation_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:productive_zone_yes": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:productive_zone_yes_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:productive_zone_no": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:productive_zone_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:productive_zone_depth": [
+   8,
+   0,
+   0,
+   2
+  ],
+  "extractbench:productive_zone_depth_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:productive_zone_reservoir": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:productive_zone_reservoir_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:max_daily_injection_volume": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:max_daily_injection_volume_review": [
+   8,
+   0,
+   0,
+   4
+  ],
+  "extractbench:est_avg_daily_injection_volume": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:est_avg_daily_injection_volume_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:max_surface_injection_pressure": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:max_surface_injection_pressure_review": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:est_avg_surface_injection_pressure": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:est_avg_surface_injection_pressure_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:source_of_fluids": [
+   8,
+   0,
+   0,
+   1
+  ],
+  "extractbench:source_of_fluids_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluids_other_leases_yes": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluids_other_leases_yes_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluids_other_leases_no": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluids_other_leases_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:commercial_disposal_yes": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:commercial_disposal_yes_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:commercial_disposal_no": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:commercial_disposal_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:nonhaz_waste_yes": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:nonhaz_waste_yes_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:nonhaz_waste_no": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:nonhaz_waste_no_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_salt_water": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_salt_water_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_brackish_water_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_fresh_water_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_co2_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_n2": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_n2_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_air_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_h2s": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_h2s_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_lpg_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_norm": [
+   8,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fluid_norm_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_natural_gas_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_polymer_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fluid_other_explain": [
+   8,
+   0,
+   0,
+   4
+  ],
+  "extractbench:fluid_other_explain_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:signature_present_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:certificate_date_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:name_of_person": [
+   8,
+   1,
+   0,
+   0
+  ],
+  "extractbench:name_of_person_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:phone_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:fax": [
+   8,
+   0,
+   0,
+   6
+  ],
+  "extractbench:fax_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:email": [
+   8,
+   0,
+   0,
+   4
+  ],
+  "extractbench:email_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:register_no": [
+   8,
+   1,
+   0,
+   3
+  ],
+  "extractbench:register_no_review": [
+   8,
+   0,
+   0,
+   3
+  ],
+  "extractbench:amount": [
+   8,
+   0,
+   0,
+   3
+  ],
+  "extractbench:amount_review": [
+   8,
+   0,
+   0,
+   8
+  ],
+  "extractbench:taxpayer_first_name_mi": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:taxpayer_last_name": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:taxpayer_ssn": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:spouse_first_name_mi": [
+   3,
+   3,
+   0,
+   1
+  ],
+  "extractbench:spouse_last_name": [
+   3,
+   2,
+   0,
+   1
+  ],
+  "extractbench:spouse_ssn": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:home_address_street": [
+   3,
+   2,
+   0,
+   3
+  ],
+  "extractbench:home_address_apt_no": [
+   3,
+   2,
+   0,
+   3
+  ],
+  "extractbench:home_address_city": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:home_address_state": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:home_address_zip": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:foreign_country_name": [
+   3,
+   3,
+   0,
+   3
+  ],
+  "extractbench:foreign_province_state_county": [
+   3,
+   3,
+   0,
+   3
+  ],
+  "extractbench:foreign_postal_code": [
+   3,
+   3,
+   0,
+   3
+  ],
+  "extractbench:presidential_campaign_you_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:presidential_campaign_spouse_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:filing_status": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:filing_status_qualifier_name": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:digital_assets_yes": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:someone_can_claim_you_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:someone_can_claim_spouse_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:spouse_itemizes_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:you_born_before_jan2_1958_box": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:you_blind_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:spouse_born_before_jan2_1958_box": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:spouse_blind_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:more_than_four_dependents_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:dependents": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_1_wages": [
+   1,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_2a_tax_exempt_interest": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_2b_taxable_interest": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_3a_qualified_dividends": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_3b_ordinary_dividends": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_4a_ira_distributions": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_4b_ira_taxable_amount": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_5a_pensions_annuities": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_5b_pensions_taxable_amount": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_6a_social_security_benefits": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_6b_social_security_taxable_amount": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_7_capital_gain_loss": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_7_schedule_d_not_required_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_8_additional_income": [
+   3,
+   1,
+   0,
+   1
+  ],
+  "extractbench:line_9_total_income": [
+   3,
+   2,
+   2,
+   0
+  ],
+  "extractbench:line_10_adjustments_to_income": [
+   3,
+   1,
+   0,
+   3
+  ],
+  "extractbench:line_11_adjusted_gross_income": [
+   3,
+   1,
+   1,
+   0
+  ],
+  "extractbench:line_12a_standard_or_itemized_deductions": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_12b_charitable_if_standard_deduction": [
+   1,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_12c_add_12a_12b": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_13_qbi_deduction": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_14_lines_12c_plus_13": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_15_taxable_income": [
+   3,
+   2,
+   0,
+   0
+  ],
+  "extractbench:line_16_tax": [
+   3,
+   3,
+   0,
+   1
+  ],
+  "extractbench:line_16_form_8814_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_16_form_4972_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_16_other_form_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_16_other_form_text": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_17_schedule_2_line_3": [
+   3,
+   2,
+   0,
+   3
+  ],
+  "extractbench:line_18_lines_16_plus_17": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_19_child_tax_credit": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_20_schedule_3_line_8": [
+   3,
+   2,
+   0,
+   3
+  ],
+  "extractbench:line_21_lines_19_plus_20": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_22_subtract_21_from_18": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:line_23_other_taxes": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:line_24_total_tax": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:line_25a_withholding_w2": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_25b_withholding_1099": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_25c_withholding_other": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_25d_total_withholding": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_26_estimated_tax_payments": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_27a_eic": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_27a_special_eic_election_box": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_27b_nontaxable_combat_pay_election": [
+   1,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_27c_prior_year_earned_income": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_28_refundable_or_additional_ctc": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_29_american_opportunity_credit": [
+   3,
+   1,
+   0,
+   3
+  ],
+  "extractbench:line_30_recovery_rebate_credit": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_31_schedule_3_line_15": [
+   3,
+   2,
+   0,
+   3
+  ],
+  "extractbench:line_32_total_other_payments": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_33_total_payments": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_34_overpaid": [
+   3,
+   1,
+   0,
+   0
+  ],
+  "extractbench:line_35a_refund_amount": [
+   3,
+   1,
+   0,
+   0
+  ],
+  "extractbench:line_35a_form_8888_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_35b_routing_number": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_35c_account_type": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_35d_account_number": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_36_applied_to_2022": [
+   1,
+   1,
+   0,
+   1
+  ],
+  "extractbench:line_37_amount_you_owe": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:line_38_estimated_tax_penalty": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:third_party_designee_yes": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:designee_name": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:designee_phone": [
+   3,
+   3,
+   0,
+   1
+  ],
+  "extractbench:designee_pin": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:your_occupation": [
+   3,
+   3,
+   0,
+   2
+  ],
+  "extractbench:your_signature_date": [
+   3,
+   3,
+   0,
+   3
+  ],
+  "extractbench:your_identity_protection_pin": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:spouse_occupation": [
+   3,
+   3,
+   0,
+   2
+  ],
+  "extractbench:spouse_signature_date": [
+   3,
+   2,
+   0,
+   3
+  ],
+  "extractbench:spouse_identity_protection_pin": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:preparer_name": [
+   3,
+   3,
+   0,
+   1
+  ],
+  "extractbench:preparer_signature_date": [
+   3,
+   3,
+   0,
+   2
+  ],
+  "extractbench:preparer_ptin": [
+   3,
+   3,
+   0,
+   1
+  ],
+  "extractbench:preparer_self_employed_box": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:firm_name": [
+   3,
+   2,
+   0,
+   0
+  ],
+  "extractbench:firm_phone": [
+   3,
+   2,
+   0,
+   1
+  ],
+  "extractbench:firm_address": [
+   3,
+   3,
+   0,
+   1
+  ],
+  "extractbench:firm_ein": [
+   3,
+   1,
+   0,
+   1
+  ],
+  "extractbench:schedule_1": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:schedule_2": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:schedule_3": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:tax_period_beginning_date": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:tax_period_ending_date": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_1116": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_2106": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:form_4562": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_4952": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_8995": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:form_6251": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_7203": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_8283": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:form_8582": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_8879": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:form_8949": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:form_8959": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:form_8960": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:schedule_8812": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:schedule_a": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:schedule_b": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:schedule_c": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:schedule_d": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:schedule_e": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:schedule_se": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:you_born_before_jan2_1959_box": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:spouse_born_before_jan2_1959_box": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_1a_total_w2_wages": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_1b_household_employee_wages": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_1c_unreported_tips": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_1d_medicaid_waiver_payments": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_1e_dependent_care_benefits": [
+   2,
+   1,
+   0,
+   2
+  ],
+  "extractbench:line_1f_adoption_benefits": [
+   2,
+   1,
+   0,
+   2
+  ],
+  "extractbench:line_1g_form_8919_wages": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_1h_other_earned_income": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_1i_nontaxable_combat_pay": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:line_1z_total_wages": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_6c_lump_sum_election_box": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_12_standard_or_itemized_deductions": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_14_lines_12_plus_13": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_27_eic": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_28_additional_child_tax_credit": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:line_36_applied_to_2024": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:tables": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:payments": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:claims": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:service_lines": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:manufacturer": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:product_title": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:specifications": [
+   6,
+   0,
+   0,
+   0
+  ],
+  "extractbench:filer_code_entry_number": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:entry_type": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:summary_date": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:surety_number": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:bond_type": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:port_code": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:entry_date": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:importing_carrier": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:mode_of_transport": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:country_of_origin": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:import_date": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:bill_of_lading_or_awb_number": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:manufacturer_id": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:exporting_country": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:export_date": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:it_number": [
+   2,
+   2,
+   0,
+   2
+  ],
+  "extractbench:it_date": [
+   2,
+   2,
+   0,
+   2
+  ],
+  "extractbench:missing_documents": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:foreign_port_of_lading": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:us_port_of_unlading": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:location_of_goods": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:consignee_number": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:importer_number": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:reference_number": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:ultimate_consignee": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:importer_of_record": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_entered_value": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_other_fees": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:ascertained_duty": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:ascertained_tax": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:ascertained_other": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:ascertained_total": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:declarant_name": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:declarant_title": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:declarant_date": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:broker_filer_name": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:broker_filer_phone": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:broker_importer_file_number": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:other_fees": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:line_items": [
+   10,
+   0,
+   0,
+   0
+  ],
+  "extractbench:report_reference_number": [
+   2,
+   2,
+   2,
+   0
+  ],
+  "extractbench:claim_reference": [
+   2,
+   2,
+   2,
+   0
+  ],
+  "extractbench:insurance_company": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:owner_name": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:owner_address": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_vehicle_vin": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:loss_vehicle_year": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_vehicle_make": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_vehicle_model": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_vehicle_trim": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:loss_vehicle_body_type": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:loss_vehicle_odometer": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:loss_incident_date": [
+   2,
+   2,
+   2,
+   0
+  ],
+  "extractbench:claim_reported_date": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:base_vehicle_value": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:condition_adjustment": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:adjusted_vehicle_value": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:vehicular_tax": [
+   2,
+   1,
+   0,
+   1
+  ],
+  "extractbench:title_registration_fees": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:deductible": [
+   2,
+   1,
+   0,
+   1
+  ],
+  "extractbench:total_settlement": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:component_conditions": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:nhtsa_recalls": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:date_issued": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:closing_date": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:disbursement_date": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:settlement_agent": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:file_number": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:property_address": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:sale_price": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:appraised_property_value": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:borrower_name": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:seller_name": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:lender_name": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:loan_term": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:purpose": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:product": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:loan_type": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:loan_id": [
+   3,
+   3,
+   0,
+   2
+  ],
+  "extractbench:mic_number": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:loan_amount": [
+   3,
+   3,
+   0,
+   2
+  ],
+  "extractbench:interest_rate": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:monthly_principal_and_interest": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:prepayment_penalty": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:prepayment_penalty_detail": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:balloon_payment": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:estimated_total_monthly_payment_first_period": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:estimated_total_monthly_payment_second_period": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:estimated_taxes_insurance_assessments": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:closing_costs_total": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:closing_costs_loan_costs_portion": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:closing_costs_other_costs_portion": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:lender_credits": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:cash_to_close": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:total_of_payments": [
+   3,
+   3,
+   0,
+   2
+  ],
+  "extractbench:finance_charge": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:amount_financed": [
+   3,
+   3,
+   0,
+   2
+  ],
+  "extractbench:annual_percentage_rate": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:total_interest_percentage": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "extractbench:assumption": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:demand_feature": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:negative_amortization": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:partial_payments": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:escrow_account": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:liability_after_foreclosure": [
+   3,
+   0,
+   0,
+   2
+  ],
+  "extractbench:loan_costs": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:other_costs": [
+   3,
+   0,
+   0,
+   1
+  ],
+  "extractbench:cash_to_close_grid": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:utility_provider": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:invoice_number": [
+   5,
+   2,
+   0,
+   2
+  ],
+  "extractbench:service_number": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:customer_name": [
+   3,
+   1,
+   1,
+   0
+  ],
+  "extractbench:service_address": [
+   3,
+   2,
+   0,
+   0
+  ],
+  "extractbench:bill_date": [
+   3,
+   1,
+   1,
+   1
+  ],
+  "extractbench:billing_period_start": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:billing_period_end": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:payment_due_date": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:amount_due": [
+   3,
+   3,
+   1,
+   0
+  ],
+  "extractbench:previous_balance": [
+   3,
+   2,
+   2,
+   0
+  ],
+  "extractbench:total_current_charges": [
+   3,
+   1,
+   1,
+   2
+  ],
+  "extractbench:total_delivery_charges": [
+   3,
+   2,
+   2,
+   1
+  ],
+  "extractbench:total_supply_charges": [
+   3,
+   1,
+   0,
+   1
+  ],
+  "extractbench:meters": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:contract_purchase_order_number": [
+   1,
+   1,
+   0,
+   0
+  ],
+  "extractbench:delivery_order_call_number": [
+   1,
+   1,
+   0,
+   1
+  ],
+  "extractbench:date_of_order": [
+   1,
+   1,
+   0,
+   0
+  ],
+  "extractbench:requisition_purchase_request_number": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_award_amount": [
+   1,
+   0,
+   0,
+   1
+  ],
+  "extractbench:tax_year": [
+   6,
+   6,
+   6,
+   0
+  ],
+  "extractbench:recipient_tin_masked": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:statement_date": [
+   2,
+   2,
+   0,
+   1
+  ],
+  "extractbench:form_1099_div": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:form_1099_int": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:form_1099_oid": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:form_1099_misc": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:form_1099_b_lots": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:form_1099_b_summary": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:form_1099_b_regulated_futures": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:merchant_name": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:store_number": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:merchant_address": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:merchant_phone": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:transaction_date": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:transaction_time": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:transaction_id": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:subtotal": [
+   4,
+   1,
+   1,
+   0
+  ],
+  "extractbench:tax": [
+   2,
+   1,
+   1,
+   0
+  ],
+  "extractbench:total": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:payment_method": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:card_last4": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:auth_code": [
+   2,
+   1,
+   0,
+   1
+  ],
+  "extractbench:amount_paid": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:currency": [
+   7,
+   0,
+   0,
+   0
+  ],
+  "extractbench:invoice_type": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:original_invoice_number": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:date": [
+   2,
+   2,
+   0,
+   0
+  ],
+  "extractbench:due_date": [
+   2,
+   1,
+   0,
+   0
+  ],
+  "extractbench:purchase_order_number": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:order_number": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:vendor": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:customer": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:discount_total": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:tax_total": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:shipping": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:total_amount": [
+   5,
+   0,
+   0,
+   0
+  ],
+  "extractbench:payment_terms": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:bank_details": [
+   2,
+   0,
+   0,
+   1
+  ],
+  "extractbench:notes": [
+   2,
+   0,
+   0,
+   2
+  ],
+  "extractbench:contract_number": [
+   1,
+   1,
+   1,
+   0
+  ],
+  "extractbench:contractor_name": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:schedule_title": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:labor_categories": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:filing_no": [
+   11,
+   11,
+   0,
+   0
+  ],
+  "extractbench:submittal_date": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:version": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:evaluation": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:test_status": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:preparer": [
+   11,
+   11,
+   0,
+   0
+  ],
+  "extractbench:preparer_phone": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:preparer_email": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operator_address_line_1": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operator_city": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operator_address_line_2": [
+   11,
+   0,
+   0,
+   9
+  ],
+  "extractbench:operator_state": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:operator_postal_code": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:api": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:injection_well": [
+   11,
+   11,
+   0,
+   0
+  ],
+  "extractbench:district": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:reason_for": [
+   11,
+   11,
+   0,
+   0
+  ],
+  "extractbench:date_test_performed": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:retest": [
+   11,
+   11,
+   0,
+   0
+  ],
+  "extractbench:retest_date_of_previous_test": [
+   11,
+   0,
+   0,
+   10
+  ],
+  "extractbench:remedial_actions_prior_to": [
+   11,
+   0,
+   0,
+   10
+  ],
+  "extractbench:well_completion_casing": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:packer_make_model": [
+   11,
+   11,
+   0,
+   0
+  ],
+  "extractbench:depth_packer": [
+   11,
+   11,
+   0,
+   0
+  ],
+  "extractbench:no_packer_injection_down_casing": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:injection_intervals": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:no_completed_intervals": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:well_status": [
+   11,
+   11,
+   11,
+   0
+  ],
+  "extractbench:well_did_not_pressure_up": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:digital_recorder_attached": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:test_pressures": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:test_witnessed_by_rrc": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "extractbench:name_of_rrc": [
+   11,
+   0,
+   0,
+   11
+  ],
+  "extractbench:injection_fluid_description": [
+   11,
+   7,
+   7,
+   4
+  ],
+  "extractbench:annulus_fluid_description": [
+   11,
+   11,
+   4,
+   0
+  ],
+  "extractbench:other_tests_surveys_performed": [
+   11,
+   11,
+   0,
+   11
+  ],
+  "extractbench:operator_comments_on_test": [
+   11,
+   4,
+   4,
+   7
+  ],
+  "extractbench:po_number": [
+   3,
+   3,
+   1,
+   1
+  ],
+  "extractbench:requisition_number": [
+   3,
+   2,
+   1,
+   1
+  ],
+  "extractbench:po_date": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:buyer": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:requisitioner": [
+   3,
+   1,
+   0,
+   1
+  ],
+  "extractbench:buyer_contact": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:ship_to": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:bill_to": [
+   3,
+   2,
+   0,
+   0
+  ],
+  "extractbench:filer_name": [
+   7,
+   0,
+   0,
+   0
+  ],
+  "extractbench:filer_lei": [
+   3,
+   0,
+   0,
+   3
+  ],
+  "extractbench:series_id": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:series_name": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:fund_lei": [
+   3,
+   3,
+   0,
+   3
+  ],
+  "extractbench:report_period_end": [
+   3,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_assets_usd": [
+   3,
+   3,
+   0,
+   0
+  ],
+  "extractbench:total_liabilities_usd": [
+   3,
+   3,
+   3,
+   0
+  ],
+  "extractbench:net_assets_usd": [
+   3,
+   3,
+   3,
+   0
+  ],
+  "extractbench:employee_ssn": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:employer_ein": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:employer_name": [
+   16,
+   12,
+   0,
+   0
+  ],
+  "extractbench:employer_address": [
+   16,
+   12,
+   0,
+   0
+  ],
+  "extractbench:void": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:employee_name": [
+   16,
+   16,
+   0,
+   0
+  ],
+  "extractbench:employee_address": [
+   16,
+   16,
+   0,
+   0
+  ],
+  "extractbench:box_1_wages": [
+   16,
+   5,
+   0,
+   0
+  ],
+  "extractbench:box_2_federal_income_tax_withheld": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_3_social_security_wages": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_4_social_security_tax_withheld": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_5_medicare_wages_and_tips": [
+   16,
+   4,
+   0,
+   0
+  ],
+  "extractbench:box_6_medicare_tax_withheld": [
+   16,
+   1,
+   0,
+   0
+  ],
+  "extractbench:box_7_social_security_tips": [
+   16,
+   0,
+   0,
+   16
+  ],
+  "extractbench:box_8_allocated_tips": [
+   16,
+   0,
+   0,
+   16
+  ],
+  "extractbench:box_10_dependent_care_benefits": [
+   16,
+   0,
+   0,
+   16
+  ],
+  "extractbench:box_11_nonqualified_plans": [
+   16,
+   0,
+   0,
+   16
+  ],
+  "extractbench:box_12": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_13_statutory_employee": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_13_retirement_plan": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_13_third_party_sick_pay": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_13_subtotal": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:box_14_other": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:state_local_row_1": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:state_local_row_2": [
+   16,
+   0,
+   0,
+   16
+  ],
+  "extractbench:control_number_line1": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:control_number_line2": [
+   16,
+   0,
+   0,
+   0
+  ],
+  "extractbench:debtor_name": [
+   1,
+   1,
+   1,
+   0
+  ],
+  "extractbench:court": [
+   1,
+   1,
+   0,
+   0
+  ],
+  "extractbench:case_number": [
+   1,
+   1,
+   0,
+   0
+  ],
+  "extractbench:creditors": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_priority_claims": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_nonpriority_claims": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_all_claims": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:jurisdiction": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:election_title": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:election_date": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:contests": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:precinct_results": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:filer_ein": [
+   4,
+   0,
+   0,
+   0
+  ],
+  "extractbench:tax_period_end_date": [
+   4,
+   0,
+   0,
+   0
+  ],
+  "extractbench:grant_records_maintained": [
+   4,
+   0,
+   0,
+   0
+  ],
+  "extractbench:total_501c3_org_count": [
+   4,
+   0,
+   0,
+   1
+  ],
+  "extractbench:total_other_org_count": [
+   4,
+   0,
+   0,
+   0
+  ],
+  "extractbench:grants": [
+   4,
+   0,
+   0,
+   0
+  ],
+  "extractbench:value_unit": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "extractbench:issuing_org": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:effective_period": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "extractbench:items": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "cuad:Document Name": [
+   381,
+   184,
+   157,
+   0
+  ],
+  "cuad:Parties": [
+   381,
+   0,
+   0,
+   0
+  ],
+  "cuad:Agreement Date": [
+   381,
+   294,
+   222,
+   28
+  ],
+  "cuad:Effective Date": [
+   381,
+   271,
+   28,
+   90
+  ],
+  "cuad:Expiration Date": [
+   381,
+   296,
+   68,
+   81
+  ],
+  "cuad:Renewal Term": [
+   381,
+   178,
+   74,
+   256
+  ],
+  "cuad:Notice Period To Terminate Renewal": [
+   381,
+   74,
+   36,
+   306
+  ],
+  "cuad:Governing Law": [
+   381,
+   328,
+   267,
+   55
+  ],
+  "cuad:Most Favored Nation": [
+   381,
+   8,
+   0,
+   360
+  ],
+  "cuad:Non-Compete": [
+   381,
+   43,
+   4,
+   290
+  ],
+  "cuad:Exclusivity": [
+   381,
+   299,
+   15,
+   247
+  ],
+  "cuad:No-Solicit Of Customers": [
+   381,
+   25,
+   2,
+   358
+  ],
+  "cuad:Competitive Restriction Exception": [
+   381,
+   59,
+   2,
+   324
+  ],
+  "cuad:No-Solicit Of Employees": [
+   381,
+   31,
+   9,
+   340
+  ],
+  "cuad:Non-Disparagement": [
+   381,
+   20,
+   2,
+   357
+  ],
+  "cuad:Termination For Convenience": [
+   381,
+   183,
+   51,
+   237
+  ],
+  "cuad:Rofr/Rofo/Rofn": [
+   381,
+   38,
+   1,
+   313
+  ],
+  "cuad:Change Of Control": [
+   381,
+   110,
+   8,
+   295
+  ],
+  "cuad:Anti-Assignment": [
+   381,
+   322,
+   95,
+   102
+  ],
+  "cuad:Revenue/Profit Sharing": [
+   381,
+   79,
+   7,
+   251
+  ],
+  "cuad:Price Restrictions": [
+   381,
+   4,
+   0,
+   371
+  ],
+  "cuad:Minimum Commitment": [
+   381,
+   44,
+   0,
+   254
+  ],
+  "cuad:Volume Restriction": [
+   381,
+   9,
+   0,
+   319
+  ],
+  "cuad:Ip Ownership Assignment": [
+   381,
+   110,
+   3,
+   293
+  ],
+  "cuad:Joint Ip Ownership": [
+   381,
+   29,
+   8,
+   345
+  ],
+  "cuad:License Grant": [
+   381,
+   175,
+   26,
+   180
+  ],
+  "cuad:Non-Transferable License": [
+   381,
+   88,
+   17,
+   279
+  ],
+  "cuad:Affiliate License-Licensor": [
+   381,
+   17,
+   0,
+   361
+  ],
+  "cuad:Affiliate License-Licensee": [
+   381,
+   15,
+   0,
+   334
+  ],
+  "cuad:Unlimited/All-You-Can-Eat-License": [
+   381,
+   17,
+   1,
+   367
+  ],
+  "cuad:Irrevocable Or Perpetual License": [
+   381,
+   133,
+   8,
+   326
+  ],
+  "cuad:Source Code Escrow": [
+   381,
+   19,
+   0,
+   371
+  ],
+  "cuad:Post-Termination Services": [
+   381,
+   245,
+   12,
+   246
+  ],
+  "cuad:Audit Rights": [
+   381,
+   170,
+   12,
+   215
+  ],
+  "cuad:Uncapped Liability": [
+   381,
+   68,
+   1,
+   295
+  ],
+  "cuad:Cap On Liability": [
+   381,
+   173,
+   14,
+   175
+  ],
+  "cuad:Liquidated Damages": [
+   381,
+   28,
+   3,
+   338
+  ],
+  "cuad:Warranty Duration": [
+   381,
+   47,
+   7,
+   325
+  ],
+  "cuad:Insurance": [
+   381,
+   181,
+   17,
+   260
+  ],
+  "cuad:Covenant Not To Sue": [
+   381,
+   18,
+   4,
+   308
+  ],
+  "cuad:Third Party Beneficiary": [
+   381,
+   78,
+   9,
+   355
+  ]
+ },
+ "threshold": 1.0001,
+ "meta": {
+  "never_automate": [
+   "cuad:Document Name",
+   "cuad:Governing Law"
+  ],
+  "manual_kinds": [
+   "json"
+  ],
+  "n_rows": 22115,
+  "n_candidates": 6141,
+  "oof": {
+   "threshold": 1.0001,
+   "p20_saving_pct": 0.0,
+   "point_saving_pct": 0.0,
+   "accepted_cand": 0,
+   "oof_precision": null
+  },
+  "break_even": 0.9900990099009901,
+  "folds": 5,
+  "error_cost": 100.0,
+  "signature": "rules",
+  "mode": "offline",
+  "fitted": "2026-11-12T22:57:40+00:00",
+  "docs": 540,
+  "gold_file": "dev.jsonl"
+ }
+}
