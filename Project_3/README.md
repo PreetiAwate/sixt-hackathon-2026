@@ -34,7 +34,7 @@ Everything is in [`starter_pack/`](starter_pack/).
   Each case is a good reply and a copy of it with one small change:
   - **harmless** (the judge should accept both): polite opener, filler sentence, reordering, translation;
   - **harmful** (the judge should reject the change): dropped condition, "usually" → "always", a wrong number or policy detail.
-- A **made-up company policy** (`policy.md`), the only thing replies are judged against.
+- A **company policy** (`policy.md`), the only thing replies are judged against.
 - **A starting judge, already run:** its verdicts and report card are included, so you see its mistakes right away.
   It scores 0.70 and catches only 7% of dropped conditions.
 - **A starter kit:** a judge template laid out in the four steps (`my_judge.py`), a runner, a scorer, a diagnosis
