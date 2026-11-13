@@ -28,7 +28,7 @@ Don't tune one judge. **Build a recipe that makes AI judges better, even ones yo
 few labelled examples). Run your recipe on it **unchanged**: only the inputs change, not your code.
 
 ## Data
-Everything is in [`starter_pack/`](starter_pack/). All of it is made up: no company or customer data.
+Everything is in [`starter_pack/`](starter_pack/).
 
 - **226 test cases** in English, German, French, Spanish and Italian, plus a 119-case subset for quick tests.
   Each case is a good reply and a copy of it with one small change:
