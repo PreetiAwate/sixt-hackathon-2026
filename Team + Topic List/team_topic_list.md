@@ -9,7 +9,7 @@
 | 5 | Sixth Normal Form (6NF) | 1: Teach a machine to say "I don't know" | 1st |  |
 | 6 | The golden butterfly | 2: Where is that car's odometer right now? | 1st |  |
 | 7 | Lakers | 2: Where is that car's odometer right now? | 1st | 6: Task Time Detective |
-| 8 | Dpuri08 | 2: Where is that car's odometer right now? | 2nd | 3: Judge the Judge |
+| 8 | Dpuri08 | 3: Judge the Judge | 1st | 2: Where is that car's odometer right now? |
 | 9 | Divinecodes | 3: Judge the Judge | 1st | 2: Where is that car's odometer right now? |
 | 10 | OBSIDIAN | 3: Judge the Judge | 1st | 1: Teach a machine to say "I don't know" |
 | 11 | Team Eagle | 3: Judge the Judge | 2nd |  |
