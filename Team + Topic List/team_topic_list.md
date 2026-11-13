@@ -15,7 +15,7 @@
 | 11 | The Bugfather | 4: Right car, right station, next 14 days | 1st |  |
 | 12 | unORganized machine | 4: Right car, right station, next 14 days | 1st |  |
 | 13 | Kaini | 4: Right car, right station, next 14 days | 1st |  |
-| 14 | Outlier | 4: Right car, right station, next 14 days | 1st | 3: Judge the Judge |
+| 14 | Outlier | 4: Judge the Judge | 1st |  |
 | 15 | Two Braincells | 5: From business question to correct answer | 1st |  |
 | 16 | No Plan is a plan | 5: From business question to correct answer | 1st |  |
 | 17 | SK² | 5: From business question to correct answer | 1st |  |
