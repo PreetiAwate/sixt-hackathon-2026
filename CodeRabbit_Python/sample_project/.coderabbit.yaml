@@ -1,0 +1,164 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+#
+# Hackathon CodeRabbit config: Java, Python, Go and C.
+# Goal: short, low-noise reviews that flag only what would break a demo.
+# Nothing in this file ever blocks a merge (every check runs in warning mode).
+#
+# Lines marked "# AGENT:" are the only ones that may need a value from you.
+
+# Language of the review comments.
+language: "en-US"
+
+# Do not enable unreleased CodeRabbit features.
+early_access: false
+
+reviews:
+  # "chill" = only report important issues, skip nitpicks.
+  profile: "chill"
+
+  # Never request changes, so a review can never block a merge.
+  request_changes_workflow: false
+
+  # Short summary at the top of the PR.
+  high_level_summary: true
+
+  # Keep the review quiet: no poem, no sequence diagrams, no estimates.
+  poem: false
+  review_status: false
+  collapse_walkthrough: true
+  sequence_diagrams: false
+  estimate_code_review_effort: false
+  suggested_labels: false
+  suggested_reviewers: false
+  related_issues: false
+  related_prs: false
+
+  # Skip generated, vendored and data files.
+  path_filters:
+    - "!**/node_modules/**"
+    - "!**/.venv/**"
+    - "!**/__pycache__/**"
+    - "!**/vendor/**"
+    - "!**/target/**"
+    - "!**/build/**"
+    - "!**/dist/**"
+    - "!**/data/**"
+    - "!**/*.lock"
+    - "!**/*.min.js"
+
+  # Global instruction for every file: keep reviews short and demo focused.
+  path_instructions:
+    - path: "**/*"
+      instructions: |
+        Keep comments short (one or two sentences). Only report:
+        - bugs that would break a live demo
+        - security issues
+        - leaked API keys, tokens or passwords
+        - wrong prices or amounts
+        Do NOT comment on style, naming, formatting, docstrings or refactoring.
+        If nothing matches, say nothing.
+
+    - path: "**/*.java"
+      instructions: |
+        - HTTP and DB calls must have timeouts.
+        - Money must use BigDecimal, never float or double.
+        - No swallowed exceptions (empty catch blocks).
+        - Close resources (try-with-resources); watch for null dereferences.
+
+    - path: "**/*.py"
+      instructions: |
+        - Calls with `requests`/`httpx` must set a timeout.
+        - Money must use Decimal or integer cents, never float.
+        - No bare `except:` that hides errors; no mutable default arguments.
+        - No hardcoded keys; read secrets from environment variables.
+
+    - path: "**/*.go"
+      instructions: |
+        - Never ignore returned errors (`_ = ...` or unchecked `err`).
+        - HTTP clients and requests must have timeouts or contexts.
+        - Money must use integer cents, never float64.
+        - Watch for goroutine leaks and unclosed response bodies.
+
+    - path: "**/*.{c,h}"
+      instructions: |
+        - Flag buffer overflows (strcpy, sprintf, gets, unchecked array indexes).
+        - Check return values of malloc, fopen and system calls.
+        - Flag memory leaks, use-after-free and integer overflow in price math.
+        - Money must use integers, never float or double.
+
+  # Static analysis tools. Only security-relevant ones are on.
+  tools:
+    gitleaks:
+      enabled: true      # finds committed secrets
+    semgrep:
+      enabled: true      # security patterns across all four languages
+    ruff:
+      enabled: true      # Python errors
+    golangci-lint:
+      enabled: true      # Go unchecked errors
+    cppcheck:
+      enabled: true      # C buffer and memory problems
+    pmd:
+      enabled: true      # Java bugs
+
+  # Challenge specific checks. All in warning mode: they show up in the
+  # review but never fail or block the merge.
+  pre_merge_checks:
+    custom_checks:
+      - name: "No committed secrets"
+        mode: "warning"
+        instructions: |
+          Fail if the diff contains API keys, tokens, passwords, client secrets or
+          .env files with real values. Secrets must come from environment variables.
+
+      - name: "Prices and products from the booking API"
+        mode: "warning"
+        instructions: |
+          Fail if prices, currencies, vehicle categories or product/protection names
+          are hardcoded or invented instead of taken from the booking API response.
+          Money must not use floating point.
+
+      - name: "Generative AI safety"
+        mode: "warning"
+        instructions: |
+          Fail if LLM output is used without validation for prices, bookings or
+          unlock commands; if user input goes into prompts without limits; if LLM
+          API keys are hardcoded; or if there is no timeout or fallback for LLM calls.
+
+      - name: "Booking flow correctness"
+        mode: "warning"
+        instructions: |
+          Check the booking steps happen in the right order (search, offer, booking,
+          confirmation), that IDs returned by one step are passed to the next, that
+          dates and times use consistent time zones, and that API errors are handled
+          so the flow does not crash mid-demo.
+
+      - name: "Safe car lock and unlock"
+        mode: "warning"
+        instructions: |
+          Fail if the lock or unlock endpoints can be called without a confirmed
+          booking for that vehicle, without an authenticated user, or in a loop or
+          automatically from LLM output. Unlock must need an explicit user action.
+
+  auto_review:
+    enabled: true
+    drafts: false
+    ignore_title_keywords:
+      - "WIP"
+      - "DO NOT MERGE"
+    base_branches:
+      - "main"
+
+# Context used when reviewing, so findings can point at the real API.
+knowledge_base:
+  code_guidelines:
+    enabled: true
+    filePatterns:
+      # AGENT: path to the README describing this year's challenge
+      - "**/README.md"
+      # AGENT: path to the Postman collection of the booking API
+      - "**/*.postman_collection.json"
+
+chat:
+  # Answer when someone replies to a review comment.
+  auto_reply: true
