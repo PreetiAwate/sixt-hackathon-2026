@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+#
+# Python review config for the hackathon.
+# Based on configs/python/pytest-google-style-config.yaml and python-ruff-config.yaml
+# from https://github.com/coderabbitai/awesome-coderabbit
+#
+# To activate: copy this file to the ROOT of your repo and name it `.coderabbit.yaml`.
+language: "en-US"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: true
+  path_filters:
+    - "!**/.venv/**"
+    - "!**/__pycache__/**"
+    - "!**/*.ipynb_checkpoints/**"
+    - "!**/data/**"
+  path_instructions:
+    - path: "**/src/**/*.py"
+      instructions: |
+        Review the Python code for conformity with the Google Python style guide and highlight deviations. Confirm that:
+        - Docstrings are present and match the implementation. Flag outdated ones.
+        - Type hints are used on public functions.
+        - No mutable default arguments, bare `except:` clauses or unused imports.
+        - No secrets, API keys or real data are committed.
+        - When an API in a module changes, dependent modules are updated.
+    - path: "**/tests/**/*.py"
+      instructions: |
+        Assess the tests using Pytest best practices. Confirm that:
+        - Test names describe the behaviour under test.
+        - Tests cover methods, classes and error paths.
+        - Tests are deterministic (no network calls, fixed random seeds).
+  tools:
+    ruff:
+      enabled: true
+    gitleaks:
+      enabled: true
+  auto_review:
+    enabled: true
+    drafts: false
+    ignore_title_keywords:
+      - "WIP"
+      - "DO NOT MERGE"
+    base_branches:
+      - "main"
+chat:
+  auto_reply: true
